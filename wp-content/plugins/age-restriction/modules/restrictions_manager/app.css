@@ -1,0 +1,125 @@
+@import url("app.sections.css");
+@import url("app.statistics.css");
+
+#age_restriction-tab-div-id-banner .age_restriction-panel-content > ul.tabsHeader {
+	float: left;
+	width: 15%;
+	margin: 10px 0 0 10px;
+	background: none;
+}
+#age_restriction-tab-div-id-banner .age_restriction-panel-content > ul.tabsHeader > li {
+	width: 100%;
+	display: block;
+}
+#age_restriction-tab-div-id-banner .age_restriction-panel-content > ul.tabsHeader > li > a {
+	width: 95%;
+	padding-right: 0px;
+	border: none;
+	background: #75acda;
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+	#age_restriction-tab-div-id-banner .age_restriction-panel-content > ul.tabsHeader > li > a:hover, 
+	#age_restriction-tab-div-id-banner .age_restriction-panel-content > ul.tabsHeader > li > a.active {
+		background: #2470b0;
+	}
+#age_restriction-tab-div-id-banner .age_restriction-panel-content > div.age_restriction-form-row {
+	float: right;
+	width: 82%;
+	/*border-left: 1px solid #F2F2F2;*/
+}
+.age_restriction-dashboard-box .age_restriction-aff-ids input {
+	width: 20% !important;
+	margin-bottom: 10px !important;
+}
+
+/* loading */
+.age_restriction-panel .age_restriction-row-loading-marker {
+    left: 0px;
+    padding: 0;
+    position: relative;
+    top: 0; /*-17px;*/
+}
+	.age_restriction-panel .age_restriction-row-loading-marker .age_restriction-row-loading {
+		background-color: #484848;
+		background-color: rgba(207, 222, 247, 0.8);
+		position: absolute;
+		top: 0px;
+		z-index: 1000;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		margin-left: -10px;
+		margin-top: -12px;
+		padding: 0px;
+	}
+	
+/* progress bar */
+.age_restriction-panel .age_restriction-meter {
+	text-align: left;
+	background-color: #f2eee3;
+	height: 20px;
+	padding: 1px 2px 1px 2px;
+	width: 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 5px #bcbcbc inset, 0 1px 0 #c3b17e;
+	-webkit-box-shadow: 0 1px 5px #bcbcbc inset, 0 1px 0 #c3b17e;
+	box-shadow: 0 1px 5px #bcbcbc inset, 0 1px 0 #c3b17e;
+}
+
+.age_restriction-panel .age_restriction-meter span {
+	display: inline-block;
+	height: 100%;
+	background-color: #777;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	-webkit-transition: width .4s ease-in-out;
+	-moz-transition: width .4s ease-in-out;
+	-ms-transition: width .4s ease-in-out;
+	-o-transition: width .4s ease-in-out;
+	transition: width .4s ease-in-out;
+}
+/* stripes */
+.age_restriction-panel .age_restriction-meter span {
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	background-size: 30px 30px;
+	background-image: -webkit-gradient(linear, left top, right bottom,
+	color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+	color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+	color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+	to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+}
+.age_restriction-panel .age_restriction-meter.age_restriction-animate span {
+	-webkit-animation: animate-stripes 3s linear infinite;
+	-moz-animation: animate-stripes 3s linear infinite;
+}
+
+/* amazon config */
+.age_restriction-msg-affid-goto-wrap, .age_restriction-msg-affkeys-goto-wrap {
+	margin: 0 5px 0 10px;
+}

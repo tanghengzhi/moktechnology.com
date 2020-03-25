@@ -1,0 +1,50 @@
+/* on/off switch */
+/* container */
+.age_restriction-iphone-switch {
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+	margin-top: 7px;
+	
+	width: 25px;
+	height: 15px;
+}
+.age_restriction-iphone-switch.large {
+	width: 105px;
+	height: 30px;
+}
+
+	/* background image */
+	.age_restriction-iphone-switch .background {
+		background: url('background.png');
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		width: 50px;
+		height: 15px;
+	}
+	.age_restriction-iphone-switch.large .background {
+		width: 161px;
+		height: 30px;
+	}
+		
+	/* mask */
+	.age_restriction-iphone-switch .mask {
+		/*background: url('mask.png');*/
+		background: none;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		width: 25px;
+		height: 15px;
+	}
+	.age_restriction-iphone-switch.large .mask {
+		width: 105px;
+		height: 30px;
+	}

@@ -1,0 +1,56 @@
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+	#agecheck {
+		position: relative;
+		top: auto;
+		left: auto;
+		-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+		transform: none;
+	}
+	.main {
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.input-area .logo img {
+		width: 35%;
+	}
+	#age-list-container {
+		overflow: hidden;
+	}
+	ul.age-list {
+		min-width: 1000px;
+	}
+	.input-area {
+		padding: 0;
+	}
+	.input-area h1 {
+		font-size: 14px;
+		margin: 10px 0;
+	}
+	select {
+		width: auto;
+	}
+	input[type=checkbox].css-checkbox + label.css-label {
+		font-size: 17px;
+	}
+	.input-area p {
+		font-size: 10px;
+	}
+	.disclaimer {
+		width: auto;
+	}
+	.socialconnect .fbconnect {
+		display: inline-block;
+		font-size: 15px;
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
+	.socialconnect .gplusconnect {
+		display: inline-block;
+		font-size: 15px;
+		line-height: 25px;
+	}
+}

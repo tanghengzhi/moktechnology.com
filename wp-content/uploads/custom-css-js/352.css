@@ -1,0 +1,103 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+.home rs-slide, rs-slide:before {
+  
+    background-color: #d71f27 !important;
+}
+
+
+.eluid5a4033f6 {
+ background:black !important;
+  
+}
+
+body .site-header {
+    background-color: black;
+   
+}
+.white_a a{
+ color:grey; 
+}
+
+
+.col-sm-3 {
+    width: 25%;
+      float: left;
+}
+@media only screen and (max-width: 760px) {
+  body .zn-menuBurger span {
+    background: white !important;
+}
+  
+ body .container.siteheader-container {
+   background: black; 
+}
+  
+  
+  body .col-xs-12 {
+    width: 100%;
+}
+body .eluidd5c0b2e2 {
+  padding-top: 10px; }
+  
+ body .eluid5a4033f6 {
+    padding-top: 35px;
+    padding-bottom: 0px;
+}
+  
+  
+  
+  
+  .eluid5a4033f6   h3 {
+    margin-bottom: 0px !important;
+      font-size: 9px !important;
+  }
+  
+  .eluid5a4033f6   h4 {
+    font-size: 10px !important;
+  }
+  
+  
+  
+  .col-sm-3 {
+  padding-left: 6px;
+     padding-right: 6px;
+}
+   
+  body .icons11  .col-sm-3 {
+  
+  position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+  
+  
+ body .icons11   h3{
+ font-size:10px !important;
+   line-height: initial !important;  
+   padding-right: 10px;
+}
+  
+  
+body .image-boxes-img.cover-fit-img {
+height: auto; 
+  }
+
+
+
+body .image-boxes .image-boxes-img-wrapper {
+     height: auto !important;
+}
+}</style>
+<!-- end Simple Custom CSS and JS -->

@@ -1,0 +1,2509 @@
+/*
+ * Age Restriction - Wordpress Premium Plugin 
+ * ------------------------------
+ * 
+ * Copyright 2014 AA-Team
+ * 
+ * http: //themeforest.net/user/AA-Team/portfolio
+ *
+ /*
+================================================== */
+
+.age_restriction-banners-list a,
+.age_restriction-banners-list a:active {
+	outline: none;
+}
+/*-----------------------*/
+/*---Popup Styles---*/
+/*-----------------------*/
+.age_restriction-main-container.popup {
+	/*
+	width: 960px;
+	margin: 0px auto;
+	*/
+}
+	.age_restriction-main-container.popup .age_restriction-logo {
+		margin: 0px auto;
+		background: url('images/main-sprite.png') no-repeat scroll -180px -265px;
+		width: 340px;
+		height: 160px;
+	} 
+	.age_restriction-main-container.popup p {
+		font: 600 14px 'Open Sans';
+		color: #8c8c8c;
+		padding-bottom: 12px;
+	}
+		.age_restriction-main-container.popup .age_restriction-description p {
+			text-align: center;
+		}
+		.age_restriction-main-container.popup .age_restriction-country-wrapper, .age_restriction-main-container.popup .age_restriction-keywords-wrapper,
+		.age_restriction-main-container.popup .age_restriction-discount-wrapper, .age_restriction-main-container.popup .age_restriction-priceselect-wrapper,
+		.age_restriction-main-container.popup .age_restriction-sortby-wrapper, .age_restriction-main-container.popup .age_restriction-customer-ratings-wrapper {
+			float: left;
+			width: 100%;
+			padding: 10px 0;
+			position: relative;
+		}
+			.age_restriction-main-container.popup .age_restriction-country-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.popup .age_restriction-country-wrapper .age_restriction-field-description:before {
+	    			background: url("images/main-sprite.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: -10px;
+					position: absolute;
+					top: -16px;
+					width: 81px;
+				}
+			.age_restriction-main-container.popup .age_restriction-keywords-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.popup .age_restriction-keywords-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -79px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.popup .age_restriction-discount-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+			.age_restriction-main-container.popup .age_restriction-discount-slider {
+				background: #ff9900;
+				margin-bottom: 20px;
+			}
+			
+			.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-discount-info-wrapper {
+				display: table;
+				width: 100%;
+			}
+			.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-discount-min {
+				width: 50px !important;
+				display: table-cell;
+				text-align: center;
+				margin-right: 10px;
+			}
+			.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-discount-arrow {
+				background: #fff !important;
+				position: relative;
+				width: 100%;
+				margin: 0px 10px 0px 10px;
+				display: table-cell;
+			}
+				.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-discount-arrow span {
+					display: block;
+					width: 100%;
+					position: relative;
+					background: #DDDDDD;
+					height: 1px;
+					top: -5px;
+				}
+				.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-discount-arrow span:before {
+					content:'\2039';
+					position: absolute;
+					left: -1px;
+					top: -13px;
+					color: #DDD;
+				}
+				.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-discount-arrow span:after {
+					content:'\203A';
+					position: absolute;
+					right: -1px;
+					top: -13px;
+					color: #DDD;
+				}
+			
+			.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-discount-max {
+				width: 50px !important;
+				display: table-cell;
+				text-align: center;
+				margin-left: 10px;
+			}
+				.age_restriction-main-container .age_restriction-discount-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -140px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				} 
+			.age_restriction-main-container.popup .age_restriction-priceselect-wrapper .age_restriction-field-description {
+				padding-left: 81px;	
+			}
+				.age_restriction-main-container.popup .age_restriction-priceselect-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -219px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.popup .age_restriction-sortby-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.popup .age_restriction-sortby-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -295px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.popup .age_restriction-customer-ratings-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.popup .age_restriction-customer-ratings-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -375px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+/*Form styles*/
+.age_restriction-main-container.popup .age_restriction-search-form {
+	position: relative;
+	width: 100%;
+}
+	.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-advanced-settings {
+		font: 400 18px 'Open Sans';
+		width: 100%;
+		float: left;
+	}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-advanced-settings .age_restriction-settings-toggle {
+			text-decoration: none;
+			color: #acacac;
+			display: block;
+			margin: 0px auto;
+			width: 170px;
+		}
+			.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-advanced-settings .age_restriction-settings-toggle .age_restriction-plus-sign {
+				color: #ff9900;	
+			}
+	.age_restriction-main-container.popup .age_restriction-search-form input, .age_restriction-main-container.popup .age_restriction-search-form select {
+		color: #949494;
+		background: #f8f8f8;
+		border: 1px solid #dddddd;
+		padding: 5px;
+		width: 100%;
+		border-radius: 2px;
+	}
+	.age_restriction-main-container.popup .age_restriction-search-form input {
+		font: 14px 'Open Sans';
+		padding: 5px 5px 5px 15px;
+		width: 98%;
+	}
+	.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select {
+		width: 48%;
+		margin-right: 1.5%;
+		float: left;
+		border: 1px solid #DDDDDD;
+		border-radius: 2px;
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+	}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select:nth-child(2n+1) {
+			width: 48%;
+			margin-left: 2%;
+			margin-right: 0;
+			float: left;
+		}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-s-hidden {
+		    visibility:hidden;
+		    padding-right:10px;
+		}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect {
+		    position:absolute;
+		    top:0;
+		    right:0;
+		    bottom:0;
+		    left:0;
+		    background-color: #F8F8F8;
+		    padding:0 10px;
+		    font: normal 14px 'Open Sans';
+			color: #949494;
+			padding: 5px 5px 5px 15px;
+		}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:after {
+			background: url("images/main-sprite.png") no-repeat scroll -61px -154px rgba(0, 0, 0, 0);
+			content: " ";
+			height: 33px;
+			position: absolute;
+			right: 5px;
+			top: 0;
+			width: 15px;
+		}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:active,
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect.active {
+		    background-color:#eee;
+		} 
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options {
+		    display:none;
+		    position:absolute;
+		    top:100%;
+		    right:0;
+		    left:0;
+		    z-index:999;
+		    margin:0 0;
+		    padding:0 0;
+		    list-style:none;
+		    border:1px solid #ccc;
+		    background-color:#EEEEEE;
+		    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		}
+			.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li {
+				font: 14px Open Sans;
+				margin: 0;
+				padding: 5px 0 5px 6px;
+			}	
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(even) .age_restriction-options li:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(even) .age_restriction-options li:before, 
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(even) .age_restriction-options li:before, 
+				.age_restriction-country-wrapper .age_restriction-select:nth-child(even) .age_restriction-styledSelect span:before {
+					content: "";
+					display: block;
+					float: left;
+					height: 25px;
+					margin-left: -3px;
+					margin-right: 10px;
+					margin-top: -3px;
+					position: relative;
+					width: 28px;
+				}
+				
+				
+				.age_restriction-country-wrapper .age_restriction-select:nth-child(even) .age_restriction-styledSelect span:before {
+					margin-left: -11px;
+					margin-right: 16px;
+				}
+				
+			
+				
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-kingdom"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-kingdom"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-kingdom"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-kingdom"]:before,
+				.age_restriction-styledSelect span.united-kingdom:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -34px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-states"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-states"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-states"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="united-states"]:before,
+				.age_restriction-styledSelect span.united-states:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -59px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="germany"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="germany"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="germany"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="germany"]:before,
+				.age_restriction-styledSelect span.germany:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -87px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="france"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="france"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="france"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="france"]:before,
+				.age_restriction-styledSelect span.france:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -117px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="canada"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="canada"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="canada"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="canada"]:before,
+				.age_restriction-styledSelect span.canada:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -146px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="china"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="china"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="china"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="china"]:before,
+				.age_restriction-styledSelect span.china:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -169px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="japan"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="japan"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="japan"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="japan"]:before,
+				.age_restriction-styledSelect span.japan:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -197px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="italy"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="italy"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="italy"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="italy"]:before,
+				.age_restriction-styledSelect span.italy:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -224px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="spain"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="spain"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="spain"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="spain"]:before,
+				.age_restriction-styledSelect span.spain:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -249px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="india"]:before,
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="india"]:before,
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="india"]:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li[rel~="india"]:before,
+				.age_restriction-styledSelect span.india:before {
+					background: url("images/main-sprite.png") no-repeat scroll -550px -274px rgba(0, 0, 0, 0);	
+				}
+				.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select .age_restriction-options li:hover {
+				    background-color:#39f;
+				    color:white;
+				}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-field-description span {
+			color: #3c3c3c;
+			font-weight: 400;
+		}
+		
+	.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-search-button {
+		background: none repeat scroll 0 0 #C50009;
+		border-radius: 5px;
+		color: #FFFFFF;
+		display: block;
+		font: bold 14px 'Open Sans';
+		margin: 80px auto 20px;
+		padding: 10px 5px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 170px;
+		box-shadow: 0 2px 0 #910007;
+	}
+		.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-search-button:hover {
+			background: #2f2f2f;
+			box-shadow: 0 2px 0 #000;
+		}
+/* Product List */
+.age_restriction-product-list-wrapper {
+	position: relative;
+	width: 100%;
+	float: left;
+	z-index: 999;
+}
+	.age_restriction-product-list-wrapper .age_restriction-pagination {
+		width: 100%;
+		background: #fafafa;
+		text-align:center;
+		float: left;
+	}
+		.age_restriction-product-list-wrapper .age_restriction-pagination ul {
+			height: 38px;
+			list-style-type: none;
+			margin: 15px 0 10px 15px;
+			text-align: center;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-pagination ul li {
+				padding: 0;
+				margin: 0 8px 0 0;
+				display: inline-block;
+			}
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li:last-of-type {
+					margin-right: 0;
+				}
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno{
+					display: block;
+					font: normal 12px 'Open Sans';
+					color: #878787;
+					background: #eeeeee;
+					border-radius: 5px;
+					padding: 10px 15px;
+					text-decoration: none;
+				}
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno.age_restriction-noselect {
+					color: #d1d1d1;
+				} 
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno.age_restriction-current,
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno:hover {
+					color: #FFF;
+					background: #ff9900;
+				}
+	.age_restriction-product-list-wrapper .age_restriction-product-list {
+		float: left;
+		list-style-type: none;
+		width: 100%;
+		padding: 10px 0 10px;
+	}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item {
+			float: left;
+			position: relative;
+			width: 99%;
+			padding: 10px 0px 10px 10px ;
+		} 
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item.even {
+			background: #ffffff;
+		}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item.odd {
+			background: #f8f8f8;
+		}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-image {
+			border: 5px solid #f8f8f8;
+			border-radius: 5px;
+			float: left;
+		}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description {
+			float: left;
+			margin-left: 20px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description p {
+				padding-bottom: 5px;
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title {
+				border-bottom: 1px solid #EBEBEB;
+				color: #373737;
+				font: 400 18px/16px 'Open Sans';
+				padding: 0 2px 5px;
+				margin-bottom: 5px;
+				
+			}
+			
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-oldprice {
+				color:#949494;
+				font: 400 14px/16px 'Open Sans';
+				
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price,
+			.age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price {
+				color: #343434;
+				font: 400 14px 'Open Sans';
+				
+			}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price span,
+				.age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price span {
+					font: 400 18px 'Open Sans';
+					color: #c50009;
+				}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price span.offer,
+				.age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price span.offer {
+					color: #1abc9c;
+				}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-you-save {
+				color: #8C8C8C;
+			}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-you-save span {
+					color: #0ea038;
+				}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-discount-bubble {
+			background: none repeat scroll 0 0 #C50009;
+			border-radius: 22px;
+			height: 42px;
+			position: absolute;
+			width: 42px;
+			top: 10px;
+			left: 35px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-discount-bubble p {
+				color: #FFFFFF;
+				padding: 10px 5px 5px;
+			}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart {
+			background: none repeat scroll 0 0 #FF9900;
+			border-radius: 5px;
+			color: #000000;
+			display: block;
+			float: right;
+			font: 12px 'Open Sans';
+			padding: 10px 15px 10px 45px;
+			position: relative;
+			text-decoration: none;
+			width: 64px;
+			margin-bottom: 10px;
+			margin-right:10px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart:before {
+				background: url("images/main-sprite.png") no-repeat scroll -15px -221px #FFFFFF;
+				border-radius: 2px;
+				content: " ";
+				height: 31px;
+				left: 3px;
+				position: absolute;
+				top: 3px;
+				width: 31px;
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart:hover {
+				background: #000;
+				color: #FFF;
+			}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more {
+			display: block;
+			background: #000;
+			border-radius: 5px;
+			color: #FFF;
+			font: normal 12px 'Open Sans';
+			padding: 10px 15px 10px 45px;
+			clear: right;
+			float: right;
+			position: relative;
+			text-decoration: none;
+			width: 64px;
+			margin-right:10px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more:before {
+				background: url("images/main-sprite.png") no-repeat scroll -49px -219px #FFFFFF;
+				border-radius: 2px;
+				content: " ";
+				height: 31px;
+				left: 3px;
+				position: absolute;
+				top: 3px;
+				width: 31px;
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more:hover {
+				background: #FF9900;
+				color: #000;
+			}
+/*Best Discount Carousel*/
+	.age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item{
+    	margin-left: 22px;
+    	width: 194px;
+    	padding-top: 15px;
+    }
+	    .age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item img{
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    border: 1px solid #DDD;
+	    }
+		.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-discount-bubble {
+			background: #02AC56;
+			border-radius: 30px;
+			height: 60px;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 60px;
+		}
+			.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-discount-bubble p {
+			 	color: #FFFFFF;
+				font: 600 19px 'Open Sans';
+				padding: 15px 5px 5px;
+				text-align: center;
+			}
+			.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title {
+				color: #373737;
+				font: 600 12px 'Open Sans';
+				text-align: center;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price { 
+				text-align: center;
+			}
+		.age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item .age_restriction-addtocart {
+			background: url("images/main-sprite.png") no-repeat scroll -15px -221px #f3f3f3;
+			border-radius: 2px;
+			height: 31px;
+			right: 58px;
+			position: absolute;
+			bottom: 95px;
+			width: 31px;
+		}
+		.age_restriction-main-container.popup .age_restriction-best-discount-list-wrapper .item .age_restriction-view-more {
+			background: url("images/main-sprite.png") no-repeat scroll -49px -219px #f3f3f3;
+			border-radius: 2px;
+			height: 31px;
+			right: 25px;
+			position: absolute;
+			bottom: 95px;
+			width: 31px;
+		}
+	.age_restriction-main-container.popup .age_restriction-best-discount-title {
+		width: 100%;
+		text-align: center;
+		font: 600 18px 'Open Sans';
+		margin: 50px 0 15px;
+	}
+		.age_restriction-main-container.popup .age_restriction-best-discount-title span{
+			color: #c50009;
+		}
+		
+/*Media Queries*/
+@media only screen and (min-width: 550px) and (max-width: 1024px) {
+	.age_restriction-main-container.popup {
+		width: 90%;
+	}
+			.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select {
+				width: 47%;
+			}
+			.age_restriction-main-container.popup .age_restriction-search-form input {
+				width: 96%;
+			}		
+}
+		
+@media only screen and (max-width: 550px) {
+	.age_restriction-main-container.popup {
+		width: 90%;
+	}
+			.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select {
+				width: 98%;
+			}
+			.age_restriction-main-container.popup .age_restriction-search-form input {
+				width: 94%;
+			}
+			.age_restriction-main-container.popup .age_restriction-search-form .age_restriction-select:nth-child(2n+1) {
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 10px;
+				width: 98%;
+			}				
+}
+
+/*-----------------------*/
+/*---Promo Page Styles---*/
+/*-----------------------*/
+.age_restriction-main-container.promo-page {
+	border: 1px solid #DDDDDD;
+	/*margin: 20px auto;
+	padding: 20px 10px;*/
+	padding: 0px 10px;
+	width: 100%;
+}
+	.age_restriction-main-container.promo-page .age_restriction-logo {
+		margin: 0px auto;
+		background: url('images/main-sprite.png') no-repeat scroll -180px -265px;
+		width: 340px;
+		height: 160px;
+	} 
+	.age_restriction-main-container.promo-page p {
+		font: 400 14px 'Open Sans';
+		color: #8c8c8c;
+		padding-bottom: 11px;
+		text-align: left;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-description p {
+			text-align: center;
+			padding: 0px 10px 10px 10px;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-country-wrapper, .age_restriction-main-container.promo-page .age_restriction-keywords-wrapper,
+		.age_restriction-main-container.promo-page .age_restriction-discount-wrapper, .age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper,
+		.age_restriction-main-container.promo-page .age_restriction-sortby-wrapper, .age_restriction-main-container.promo-page .age_restriction-customer-ratings-wrapper {
+			float: left;
+			width: 100%;
+			padding: 10px 0;
+			position: relative;
+		}
+			.age_restriction-main-container.promo-page .age_restriction-country-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+				margin-bottom: 10px;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-country-wrapper .age_restriction-field-description:before {
+	    			background: url("images/main-sprite.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: -10px;
+					position: absolute;
+					top: -6px;
+					width: 81px;
+				}
+			.age_restriction-main-container.promo-page .age_restriction-keywords-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-keywords-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -79px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-discount-slider {
+				background: #ff9900;
+				margin-bottom: 20px;
+			}
+			/*.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-discount-min {
+				float: left;
+				width: 50px;
+				text-align: center;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-discount-arrow {
+				background: #DDDDDD;
+				height: 1px;
+				margin: 33px auto 0;
+				position: relative;
+				width: 82%;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-discount-arrow:before {
+					content:'\2039';
+					position: absolute;
+					left:-1px;
+					top: -11px;
+					color: #DDD;
+				}
+				.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-discount-arrow:after {
+					content:'\203A';
+					position: absolute;
+					right: -1px;
+					top: -11px;
+					color: #DDD;
+				}
+			
+			.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-discount-max {
+				float: right;
+				width: 50px;
+				text-align: center;
+				margin-top: -15px;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -140px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}*/
+			.age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper .age_restriction-field-description {
+				padding-left: 81px;	
+			}
+				.age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -219px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.promo-page .age_restriction-sortby-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-sortby-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -295px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.promo-page .age_restriction-customer-ratings-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-customer-ratings-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -375px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+/*Form styles*/
+.age_restriction-main-container.promo-page .age_restriction-search-form {
+	position: relative;
+	width: 80%;
+	margin: 0px auto;
+}
+	.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-advanced-settings {
+		font: 400 18px 'Open Sans';
+		width: 100%;
+		float: left;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-advanced-settings .age_restriction-settings-toggle {
+			text-decoration: none;
+			color: #acacac;
+			display: block;
+			margin: 0px auto;
+			width: 170px;
+		}
+			.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-advanced-settings .age_restriction-settings-toggle .age_restriction-plus-sign {
+				color: #ff9900;	
+				font-weight: 600;
+			}
+	.age_restriction-main-container.promo-page .age_restriction-search-form input, .age_restriction-main-container.promo-page .age_restriction-search-form select {
+		color: #949494;
+		background: #f8f8f8;
+		border: 1px solid #dddddd;
+		padding: 5px;
+		width: 100%;
+		border-radius: 2px;
+	}
+	.age_restriction-main-container.promo-page .age_restriction-search-form input {
+		font: 14px 'Open Sans';
+		padding: 5px;
+		width: 100%;
+		padding-left: 15px;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-discount-info-wrapper input {
+			padding: 5px;
+		}
+	.age_restriction-main-container.promo-page .age_restriction-country-wrapper .age_restriction-select {
+		margin-bottom: 10px;
+	}
+	.age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper input {
+		margin-bottom: 10px;
+	}
+	.age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper input.age_restriction-one-half {
+		width: 48%;
+		float: left;
+		margin-right: 2%;
+	}
+	.age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper input.age_restriction-one-half-last {
+		width: 48%;
+		float: left;
+		margin-left: 2%;
+		margin-right: 0;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-sortby-wrapper .age_restriction-select,
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restrictionGetChildrens .age_restriction-select {
+			width: 100%;
+			margin-left: 0;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restrictionGetChildrens .age_restriction-select {
+			margin-bottom: 5px;
+		}
+	.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select {
+		width: 47%;
+		margin-right: 2.4%;
+		float: left;
+		border: 1px solid #DDDDDD;
+		border-radius: 2px;
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-box-category-ajax,
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(2n+1) {
+			width: 48%;
+			margin-left: 2%;
+			margin-right: 0;
+			float: left;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(2n+1) {
+			width: 100%;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-s-hidden {
+		    visibility:hidden;
+		    padding-right:10px;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect {
+		    position:absolute;
+		    top:0;
+		    right:0;
+		    bottom:0;
+		    left:0;
+		    background-color: #F8F8F8;
+		    padding:0 10px;
+		    font: normal 14px/20px 'Open Sans';
+			color: #949494;
+			padding: 5px 5px 5px 15px;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:after {
+			background: url("images/main-sprite.png") no-repeat scroll -61px -154px rgba(0, 0, 0, 0);
+			content: " ";
+			height: 33px;
+			position: absolute;
+			right: 5px;
+			top: 0px;
+			width: 15px;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:active,
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect.active {
+		    background-color:#eee;
+		} 
+		
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options {
+		    display:none;
+		    position:absolute;
+		    top:100%;
+		    right:0;
+		    left:0;
+		    z-index:9999;
+		    margin:0 0;
+		    padding:0 0;
+		    list-style:none;
+		    border:1px solid #ccc;
+		    background-color:#EEEEEE;
+		    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		}
+			.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li {
+				font: 14px Open Sans;
+				margin: 0;
+				padding: 5px 0 5px 6px;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select .age_restriction-options li:hover {
+				    background-color:#39f;
+				    color:white;
+				}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-field-description span {
+			color: #3c3c3c;
+			font-weight: 400;
+		}
+		
+	.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-search-button {
+		background: none repeat scroll 0 0 #C50009;
+		border-radius: 5px;
+		color: #FFFFFF;
+		display: block;
+		font: bold 14px 'Open Sans';
+		padding: 10px 5px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 170px;
+		box-shadow: 0 2px 0 #910007;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-search-button:hover {
+			background: #2f2f2f;
+			box-shadow: 0 2px 0 #000;
+		}
+/* Product List */
+.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper {
+	position: relative;
+	width: 100%;
+	float: left;
+	z-index: 999; /*3*/
+}
+	.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-error {
+		background-color: #ffcbca;
+		border-color: #eb979b;
+		color: #9b4449;
+		width: 90%;
+		padding: 10px 5% 10px 5%;
+	}
+	
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-pagination ul li {
+				padding: 0;
+				margin: 0 8px 8px 0;
+				display: inline-block;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-pagination ul li:last-of-type {
+					margin-right: 0;
+				}
+				.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno {
+					display: block;
+					font: normal 12px 'Open Sans';
+					color: #878787;
+					background: #eeeeee;
+					border-radius: 5px;
+					padding: 10px 14px;
+					text-decoration: none;
+				}
+				.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno.age_restriction-noselect {
+					color: #d1d1d1;
+				} 
+				.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno.age_restriction-current,
+				.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno:hover {
+					color: #FFF;
+					background: #ff9900;
+				}
+	.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list {
+		float: left;
+		list-style-type: none;
+		width: 100%;
+		padding: 10px 0 10px;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item {
+			float: left;
+			position: relative;
+			width: 96%;
+			padding: 20px 2%;
+		} 
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item.even {
+			background: #f8f8f8;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item.odd {
+			background: #ffffff;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-image {
+			border: 3px solid #f8f8f8;
+			border-radius: 3px;
+			float: left;
+			width: 160px;
+			height: 160px; 
+			margin-right: 10px;
+			display: block;
+			text-align: center;
+			background: #fff;
+		}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item.even .age_restriction-product-image {
+				border-color: #e7e8e8;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-image:hover {
+				border-color: #bdc3c7;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-image img {
+				display: block;
+				margin: 0 auto;
+			}
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description {
+			float: left;
+			margin-left: 20px;
+			margin-bottom: 10px;
+			width: 58%;
+		}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description p {
+				padding-bottom: 5px;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title {
+				border-bottom: 1px solid #EBEBEB;
+				color: #373737;
+				font: 400 16px/20px 'Open Sans';
+				margin-bottom: 5px;
+				margin: 0px 0px 10px 0px;
+				padding: 0px 0px 5px 0px;
+				display: block;
+				width: 100%;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title a {	
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					color: #373737;
+					display: block;
+					margin: 0px 0px 0px 0px;
+					padding: 0px 0px 0px 0px;
+				}
+					.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title a:hover {
+						color: #ff9900;
+					}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price,
+			.age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price {
+				color: #343434;
+			}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price span,
+				.age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price span {
+					font: 400 18px 'Open Sans';
+					color: #c50009;
+				}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price span.offer,
+				.age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price span.offer {
+					color: #1abc9c;
+				}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-you-save {
+				color: #8C8C8C;
+			}
+				.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-you-save span {
+					color: #0ea038;
+				}
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-discount-bubble {
+			background: none repeat scroll 0 0 #C50009;
+			border-radius: 22px;
+			height: 42px;
+			position: absolute;
+			width: 42px;
+			top: 10px;
+			left: 35px;
+		}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-discount-bubble p {
+				color: #FFFFFF;
+				padding: 10px 5px 5px;
+			}
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart {
+			background: none repeat scroll 0 0 #FF9900;
+			border-radius: 5px;
+			color: #000000;
+			display: block;
+			float: right;
+			font: 12px 'Open Sans';
+			padding: 10px 15px 10px 45px;
+			position: relative;
+			text-decoration: none;
+			width: 125px;
+			margin-bottom: 10px;
+		}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart:before {
+				background: url("images/main-sprite.png") no-repeat scroll -15px -221px #FFFFFF;
+				border-radius: 2px;
+				content: " ";
+				height: 31px;
+				left: 3px;
+				position: absolute;
+				top: 3px;
+				width: 31px;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart:hover {
+				background: #000;
+				color: #FFF;
+			}
+		.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more {
+			display: block;
+			background: #000;
+			border-radius: 5px;
+			color: #FFF;
+			font: normal 12px 'Open Sans';
+			padding: 10px 15px 10px 45px;
+			clear: right;
+			float: right;
+			position: relative;
+			text-decoration: none;
+			width: 125px;
+		}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more:before {
+				background: url("images/main-sprite.png") no-repeat scroll -49px -219px #FFFFFF;
+				border-radius: 2px;
+				content: " ";
+				height: 31px;
+				left: 3px;
+				position: absolute;
+				top: 3px;
+				width: 31px;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more:hover {
+				background: #FF9900;
+				color: #000;
+			}
+/*Best Discount Carousel*/
+	.age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item{
+    	margin-left: 22px;
+    	width: 194px;
+    	padding-top: 15px;
+    }
+	    .age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item img{
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    border: 1px solid #DDD;
+	    }
+		.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-discount-bubble {
+			background: #02AC56;
+			border-radius: 30px;
+			height: 60px;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 60px;
+		}
+			.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-discount-bubble p {
+			 	color: #FFFFFF;
+				font: 600 19px 'Open Sans';
+				padding: 15px 5px 5px;
+				text-align: center;
+			}
+			.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title {
+				color: #373737;
+				font: 600 12px 'Open Sans';
+				text-align: center;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price { 
+				text-align: center;
+			}
+		.age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item .age_restriction-addtocart {
+			background: url("images/main-sprite.png") no-repeat scroll -15px -221px #f3f3f3;
+			border-radius: 2px;
+			height: 31px;
+			right: 58px;
+			position: absolute;
+			bottom: 95px;
+			width: 31px;
+		}
+		.age_restriction-main-container.promo-page .age_restriction-best-discount-list-wrapper .item .age_restriction-view-more {
+			background: url("images/main-sprite.png") no-repeat scroll -49px -219px #f3f3f3;
+			border-radius: 2px;
+			height: 31px;
+			right: 25px;
+			position: absolute;
+			bottom: 95px;
+			width: 31px;
+		}
+	.age_restriction-main-container.promo-page .age_restriction-best-discount-title {
+		width: 100%;
+		text-align: center;
+		font: 600 18px 'Open Sans';
+		margin: 50px 0 15px;
+	}
+		.age_restriction-main-container.promo-page .age_restriction-best-discount-title span{
+			color: #c50009;
+		}
+/*Media Queries*/		
+@media only screen and (max-width: 920px) {
+	.age_restriction-main-container.promo-page {
+		width: 90%;
+	}
+			.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select {
+				width: 98%;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-search-form input {
+				width: 94%;
+			}
+			.age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select:nth-child(2n+1) {
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 10px;
+				width: 98%;
+			}
+}		
+
+/*-----------------------*/
+/*---Side Slide Styles---*/
+/*-----------------------*/
+.age_restriction-main-container.slide-side {
+	/*width: 480px;
+	height: 350px;*/
+	padding: 0 15px;
+	background: #FFF;
+	border: 1px solid #DDD;
+}
+.age_restriction-openside {
+	width: 40px;
+	height: 40px;
+	font-size: 36px;
+	color: #202020;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	background: #FFF;
+	z-index: 999;
+	border: 0;
+	line-height: 30px;
+}
+.age_restriction-openside:active, .age_restriction-openside:focus {
+	outline: none;
+}
+.age_restriction-openside.left {
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD; 
+	border-right: 1px solid #DDD;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.age_restriction-openside.right {
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD; 
+	border-left: 1px solid #DDD;
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+	
+	.age_restriction-main-container.slide-side .age_restriction-logo {
+		margin: 0px auto;
+		background: url('images/main-sprite.png') no-repeat scroll -180px -265px;
+		width: 340px;
+		height: 160px;
+	} 
+	.age_restriction-main-container.slide-side p {
+		font: 600 14px 'Open Sans';
+		color: #8c8c8c;
+		padding-bottom: 12px;
+	}
+		.age_restriction-main-container.slide-side .age_restriction-description p {
+			text-align: center;
+		}
+		.age_restriction-main-container.slide-side .age_restriction-country-wrapper, .age_restriction-main-container.slide-side .age_restriction-keywords-wrapper,
+		.age_restriction-main-container.slide-side .age_restriction-discount-wrapper, .age_restriction-main-container.slide-side .age_restriction-priceselect-wrapper,
+		.age_restriction-main-container.slide-side .age_restriction-sortby-wrapper, .age_restriction-main-container.slide-side .age_restriction-customer-ratings-wrapper {
+			float: left;
+			width: 100%;
+			padding: 10px 0;
+			position: relative;
+		}
+			.age_restriction-main-container.slide-side .age_restriction-country-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.slide-side .age_restriction-country-wrapper .age_restriction-field-description:before {
+	    			background: url("images/main-sprite.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: -10px;
+					position: absolute;
+					top: -16px;
+					width: 81px;
+				}
+			.age_restriction-main-container.slide-side .age_restriction-keywords-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.slide-side .age_restriction-keywords-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -79px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.slide-side .age_restriction-discount-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+			.age_restriction-main-container.slide-side .age_restriction-discount-slider {
+				background: #ff9900;
+				margin-bottom: 20px;
+			}
+			.age_restriction-main-container.slide-side .age_restriction-discount-wrapper .age_restriction-discount-min {
+				float: left;
+				width: 35px;
+				text-align: center;
+			}
+			.age_restriction-main-container.slide-side .age_restriction-discount-wrapper .age_restriction-discount-arrow {
+				background: #DDDDDD;
+				height: 1px;
+				margin: 33px auto 0;
+				position: relative;
+				width: 85%;
+			}
+				.age_restriction-main-container.slide-side .age_restriction-discount-wrapper .age_restriction-discount-arrow:before {
+					content:'\2039';
+					position: absolute;
+					left:-1px;
+					top: -11px;
+					color: #DDD;
+				}
+				.age_restriction-main-container.slide-side .age_restriction-discount-wrapper .age_restriction-discount-arrow:after {
+					content:'\203A';
+					position: absolute;
+					right: -1px;
+					top: -11px;
+					color: #DDD;
+				}
+			
+			.age_restriction-main-container.slide-side .age_restriction-discount-wrapper .age_restriction-discount-max {
+				float: right;
+				width: 35px;
+				text-align: center;
+				margin-top: -15px;
+			}
+				.age_restriction-main-container.slide-side .age_restriction-discount-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -140px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 75px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				} 
+			.age_restriction-main-container.slide-side .age_restriction-priceselect-wrapper .age_restriction-field-description {
+				padding-left: 81px;	
+			}
+				.age_restriction-main-container.slide-side .age_restriction-priceselect-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -219px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.slide-side .age_restriction-sortby-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.slide-side .age_restriction-sortby-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -295px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+			.age_restriction-main-container.slide-side .age_restriction-customer-ratings-wrapper .age_restriction-field-description {
+				padding-left: 81px;
+			}
+				.age_restriction-main-container.slide-side .age_restriction-customer-ratings-wrapper .age_restriction-field-description:before {
+					background: url("images/main-sprite.png") no-repeat scroll -375px 10px rgba(0, 0, 0, 0);
+					content: " ";
+					height: 78px;
+					left: 0;
+					position: absolute;
+					top: -16px;
+					width: 64px;
+				}
+/*Form styles*/
+.age_restriction-main-container.slide-side .age_restriction-search-form {
+	position: relative;
+	width: 100%;
+}
+	.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-advanced-settings {
+		font: 400 18px 'Open Sans';
+		width: 100%;
+		float: left;
+	}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-advanced-settings .age_restriction-settings-toggle {
+			text-decoration: none;
+			color: #acacac;
+			display: block;
+			margin: 0px auto;
+			width: 170px;
+		}
+			.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-advanced-settings .age_restriction-settings-toggle .age_restriction-plus-sign {
+				color: #ff9900;	
+			}
+	.age_restriction-main-container.slide-side .age_restriction-search-form input, .age_restriction-main-container.slide-side .age_restriction-search-form select {
+		color: #949494;
+		background: #f8f8f8;
+		border: 1px solid #dddddd;
+		padding: 5px;
+		width: 100%;
+		border-radius: 2px;
+	}
+	.age_restriction-main-container.slide-side .age_restriction-search-form input {
+		font: 14px 'Open Sans';
+		padding: 5px 5px 5px 15px;
+		width: 95%;
+	}
+	.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select {
+		width: 47%;
+		margin-right: 2%;
+		float: left;
+		border: 1px solid #DDDDDD;
+		border-radius: 2px;
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+	}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select:nth-child(2n+1) {
+			width: 48%;
+			margin-left: 2%;
+			margin-right: 0;
+			float: left;
+		}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-s-hidden {
+		    visibility:hidden;
+		    padding-right:10px;
+		}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect {
+		    position:absolute;
+		    top:0;
+		    right:0;
+		    bottom:0;
+		    left:0;
+		    background-color: #F8F8F8;
+		    padding:0 10px;
+		    font: normal 14px 'Open Sans';
+			color: #949494;
+			padding: 5px 5px 5px 15px;
+		}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:after {
+			background: url("images/main-sprite.png") no-repeat scroll -61px -154px rgba(0, 0, 0, 0);
+			content: " ";
+			height: 33px;
+			position: absolute;
+			right: 5px;
+			top: 0;
+			width: 15px;
+		}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:active,
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect.active {
+		    background-color:#eee;
+		} 
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options {
+		    display:none;
+		    position:absolute;
+		    top:100%;
+		    right:0;
+		    left:0;
+		    z-index:999;
+		    margin:0 0;
+		    padding:0 0;
+		    list-style:none;
+		    border:1px solid #ccc;
+		    background-color:#EEEEEE;
+		    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		}
+			.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li {
+				font: 14px Open Sans;
+				margin: 0;
+				padding: 5px 0 5px 6px;
+			}
+				.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select .age_restriction-options li:hover {
+				    background-color:#39f;
+				    color:white;
+				}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-field-description span {
+			color: #3c3c3c;
+			font-weight: 400;
+		}
+		
+	.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-search-button {
+		background: none repeat scroll 0 0 #C50009;
+		border-radius: 5px;
+		color: #FFFFFF;
+		display: block;
+		font: bold 14px 'Open Sans';
+		margin: 80px auto 20px;
+		padding: 10px 5px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 170px;
+		box-shadow: 0 2px 0 #910007;
+	}
+		.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-search-button:hover {
+			background: #2f2f2f;
+			box-shadow: 0 2px 0 #000;
+		}
+/* Product List */
+.age_restriction-product-list-wrapper {
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li:last-of-type {
+					margin-right: 0;
+				}
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno{
+					display: block;
+					font: normal 12px 'Open Sans';
+					color: #878787;
+					background: #eeeeee;
+					border-radius: 5px;
+					padding: 10px 15px;
+					text-decoration: none;
+				}
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno.age_restriction-noselect {
+					color: #d1d1d1;
+				} 
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno.age_restriction-current,
+				.age_restriction-product-list-wrapper .age_restriction-pagination ul li .age_restriction-pageno:hover {
+					color: #FFF;
+					background: #ff9900;
+				}
+	
+		
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-image {
+			border: 5px solid #f8f8f8;
+			border-radius: 5px;
+			float: left;
+		}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description {
+			float: left;
+			margin-left: 20px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description p {
+				padding-bottom: 5px;
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title {
+				border-bottom: 1px solid #EBEBEB;
+				color: #373737;
+				font: 400 18px/16px 'Open Sans';
+				padding: 0 2px 5px;
+				margin-bottom: 5px;
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price,
+			.age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price {
+				color: #343434;
+			}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price span,
+				.age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price span {
+					font: 400 18px 'Open Sans';
+					color: #c50009;
+				}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-sale-price span.offer,
+				.age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price span.offer {
+					color: #1abc9c;
+				}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-you-save {
+				color: #8C8C8C;
+			}
+				.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-you-save span {
+					color: #0ea038;
+				}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-discount-bubble {
+			background: none repeat scroll 0 0 #C50009;
+			border-radius: 22px;
+			height: 42px;
+			position: absolute;
+			width: 42px;
+			top: 10px;
+			left: 35px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-discount-bubble p {
+				color: #FFFFFF;
+				padding: 10px 5px 5px;
+			}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart {
+			background: none repeat scroll 0 0 #FF9900;
+			border-radius: 5px;
+			color: #000000;
+			display: block;
+			float: right;
+			font: 12px 'Open Sans';
+			padding: 10px 15px 10px 45px;
+			position: relative;
+			text-decoration: none;
+			width: 64px;
+			margin-bottom: 10px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart:before {
+				background: url("images/main-sprite.png") no-repeat scroll -15px -221px #FFFFFF;
+				border-radius: 2px;
+				content: " ";
+				height: 31px;
+				left: 3px;
+				position: absolute;
+				top: 3px;
+				width: 31px;
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart:hover {
+				background: #000;
+				color: #FFF;
+			}
+		.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more {
+			display: block;
+			background: #000;
+			border-radius: 5px;
+			color: #FFF;
+			font: normal 12px 'Open Sans';
+			padding: 10px 15px 10px 45px;
+			clear: right;
+			float: right;
+			position: relative;
+			text-decoration: none;
+			width: 64px;
+		}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more:before {
+				background: url("images/main-sprite.png") no-repeat scroll -49px -219px #FFFFFF;
+				border-radius: 2px;
+				content: " ";
+				height: 31px;
+				left: 3px;
+				position: absolute;
+				top: 3px;
+				width: 31px;
+			}
+			.age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more:hover {
+				background: #FF9900;
+				color: #000;
+			}
+/*Best Discount Carousel*/
+	.age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item{
+    	margin-left: 22px;
+    	width: 194px;
+    	padding-top: 15px;
+    }
+	    .age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item img{
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    border: 1px solid #DDD;
+	    }
+		.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-discount-bubble {
+			background: #02AC56;
+			border-radius: 30px;
+			height: 60px;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 60px;
+		}
+			.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-discount-bubble p {
+			 	color: #FFFFFF;
+				font: 600 19px 'Open Sans';
+				padding: 15px 5px 5px;
+				text-align: center;
+			}
+			.age_restriction-best-discount-list-wrapper .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title {
+				color: #373737;
+				font: 600 12px 'Open Sans';
+				text-align: center;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item .age_restriction-product-description .age_restriction-sale-price { 
+				text-align: center;
+			}
+		.age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item .age_restriction-addtocart {
+			background: url("images/main-sprite.png") no-repeat scroll -15px -221px #f3f3f3;
+			border-radius: 2px;
+			height: 31px;
+			right: 58px;
+			position: absolute;
+			bottom: 95px;
+			width: 31px;
+		}
+		.age_restriction-main-container.slide-side .age_restriction-best-discount-list-wrapper .item .age_restriction-view-more {
+			background: url("images/main-sprite.png") no-repeat scroll -49px -219px #f3f3f3;
+			border-radius: 2px;
+			height: 31px;
+			right: 25px;
+			position: absolute;
+			bottom: 95px;
+			width: 31px;
+		}
+	.age_restriction-main-container.slide-side .age_restriction-best-discount-title {
+		width: 100%;
+		text-align: center;
+		font: 600 18px 'Open Sans';
+		margin: 50px 0 15px;
+	}
+		.age_restriction-main-container.slide-side .age_restriction-best-discount-title span{
+			color: #c50009;
+		}
+/*Media Queries*/
+@media only screen and (min-width: 550px) and (max-width: 1024px) {
+			.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select {
+				width: 47%;
+			}
+			.age_restriction-main-container.slide-side .age_restriction-search-form input {
+				width: 96%;
+			}		
+}
+		
+@media only screen and (max-width: 550px) {
+			.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select {
+				width: 98%;
+			}
+			.age_restriction-main-container.slide-side .age_restriction-search-form input {
+				width: 94%;
+			}
+			.age_restriction-main-container.slide-side .age_restriction-search-form .age_restriction-select:nth-child(2n+1) {
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 10px;
+				width: 98%;
+			}				
+}
+
+/*-----------------------*/
+/*---Top Bar Styles---*/
+/*-----------------------*/
+.age_restriction-top-bar {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px;
+	background: #FFF;
+	border-bottom: 1px solid #b0b0b0;
+	z-index: 999;
+	/*position: relative;
+	top:0;*/
+}
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-top-bar-logo {
+			background: url("images/main-sprite.png") no-repeat scroll -477px -33px rgba(0, 0, 0, 0);
+			display: block;
+			float: left;
+			height: 32px;
+			width: 35px;
+			margin: 0px 40px 0px 0px;
+			overflow: hidden;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	.age_restriction-top-bar .age_restriction-search-form {
+		display: table;
+		position: relative;
+		height: auto;
+		margin: 0px auto;
+	}
+	.age_restriction-top-bar .age_restriction-country-wrapper {
+		float: left;
+		padding: 10px 0;
+		position: relative;
+	}
+	.age_restriction-top-bar .age_restriction-discount-wrapper,
+	.age_restriction-top-bar .age_restriction-keywords-wrapper,
+	.age_restriction-top-bar .age_restriction-discount-wrapper {
+		float: left;
+		width: auto;
+		padding: 0px 0;
+		position: relative;
+		margin-right: 10px;
+	}
+	.age_restriction-top-bar .age_restriction-search-form input, .age_restriction-main-container.popup .age_restriction-search-form select {
+		color: #949494;
+		background: #f8f8f8;
+		border: 1px solid #dddddd;
+		padding: 5px;
+		width: 100%;
+		border-radius: 2px;
+	}
+	.age_restriction-top-bar .age_restriction-search-form input {
+		font: 14px 'Open Sans';
+		padding: 5px 5px 5px 15px;
+		width: 89%;
+	}
+	.age_restriction-top-bar .age_restriction-search-form .age_restriction-plus-sign-top {
+		color: #ff9900;
+		font-size: 20px;
+		text-align: center;
+		float: left;
+		margin: 10px 20px 10px 10px;
+		width: 11px;
+	}
+	
+	.age_restriction-top-bar .age_restriction-search-form .age_restriction-select {
+		margin-right: 10px;
+		float: left;
+		padding-right: 20px;
+		border: 1px solid #DDDDDD;
+		border-radius: 2px;
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		height: 30px;
+		min-width: 120px;
+	}
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-s-hidden {
+		    visibility:hidden;
+		    padding-right:10px;
+		}
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect {
+		    position:absolute;
+		    top:0;
+		    right:0;
+		    bottom:0;
+		    left:0;
+		    background-color: #F8F8F8;
+		    padding:0 10px;
+		    font: normal 14px 'Open Sans';
+			color: #949494;
+			padding: 5px 5px 5px 15px;
+		}
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:after {
+			background: url("images/main-sprite.png") no-repeat scroll -61px -154px rgba(0, 0, 0, 0);
+			content: " ";
+			height: 33px;
+			position: absolute;
+			right: 5px;
+			top: 0;
+			width: 15px;
+		}
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect:active,
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-styledSelect.active {
+		    background-color:#eee;
+		} 
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options {
+		    display:none;
+		    position:absolute;
+		    top:100%;
+		    right:0;
+		    left:0;
+		    z-index:9999;
+		    margin:0 0;
+		    padding:0 0;
+		    list-style:none;
+		    border:1px solid #ccc;
+		    background-color:#EEEEEE;
+		    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+		}
+			.age_restriction-top-bar .age_restriction-search-form .age_restriction-select .age_restriction-options li {
+				font: 14px Open Sans;
+				margin: 0;
+				padding: 5px 0 5px 6px;
+			}
+		.age_restriction-top-bar .age_restriction-search-form .age_restriction-search-button {
+			background: none repeat scroll 0 0 #C50009;
+			border-radius: 5px;
+			color: #FFFFFF;
+			display: block;
+			font: bold 14px 'Open Sans';
+			padding: 5px;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			width: 170px;
+			box-shadow: 0 2px 0 #910007;
+			float: left;
+			margin-top: 4px;
+		}
+			.age_restriction-top-bar .age_restriction-search-form .age_restriction-search-button:hover {
+				background: #2f2f2f;
+				box-shadow: 0 2px 0 #000;
+			}	
+				body .age_restriction-top-bar .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(even) .age_restriction-options li:before {
+					content: none;
+				}
+				body .age_restriction-top-bar .age_restriction-country-wrapper .age_restriction-select:nth-child(even) .age_restriction-styledSelect span:before {
+					margin: 0;
+					content: none;
+				}
+				.age_restriction-top-bar .age_restriction-country-wrapper .age_restriction-select:nth-child(odd) .age_restriction-styledSelect span:before,
+				.age_restriction-top-bar .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(odd) .age_restriction-options li:before  {
+					content: "";
+					display: block;
+					float: left;
+					height: 25px;
+					margin-left: -3px;
+					margin-right: 10px;
+					margin-top: -3px;
+					position: relative;
+					width: 28px;
+				}
+				.age_restriction-top-bar .age_restriction-country-wrapper .age_restriction-select:nth-child(odd) .age_restriction-styledSelect span:before {
+					margin-left: -11px;
+					margin-right: 16px;
+				}
+				
+/*For demo purpose only*/
+.ajax-content {
+	display: none;
+	z-index: 9999;
+	margin: 0 auto;
+	width: 90%;
+}
+	.ajax-content .age_restriction-product-list-wrapper {
+		background: #F8F8F8;
+	}
+		.ajax-content .age_restriction-product-list-wrapper .age_restriction-product-list {
+			margin-left: 16px;
+			width: 98%;
+		}
+			.ajax-content .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item {
+				margin-left: 16px;
+			}
+			.ajax-content .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item.odd {
+				background: #FFF;
+			}
+
+
+
+/*-----------------------*/
+/*---Extra CSS Styles---*/
+/*-----------------------*/
+
+/* loading */
+.age_restriction-banners-list .age_restriction-row-loading-marker {
+    left: 10px;
+    padding: 0;
+    position: relative;
+    top: 10px; /*-17px;*/
+}
+	.age_restriction-banners-list .age_restriction-row-loading-marker .age_restriction-row-loading {
+		background-color: #484848;
+		background-color: rgba(255, 255, 255, 0.8);/*rgba(207, 222, 247, 0.8);*/
+		position: absolute;
+		top: 0px;
+		z-index: 1000;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		margin-left: -10px;
+		margin-top: -12px;
+		padding: 0px;
+	}
+	
+/* progress bar */
+.age_restriction-banners-list .age_restriction-meter {
+	text-align: left;
+	background-color: #f2eee3;
+	height: 20px;
+	padding: 1px 2px 1px 2px;
+	width: 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 5px #bcbcbc inset, 0 1px 0 #c3b17e;
+	-webkit-box-shadow: 0 1px 5px #bcbcbc inset, 0 1px 0 #c3b17e;
+	box-shadow: 0 1px 5px #bcbcbc inset, 0 1px 0 #c3b17e;
+}
+
+.age_restriction-banners-list .age_restriction-meter span {
+	display: inline-block;
+	height: 100%;
+	background-color: #777;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	-webkit-transition: width .4s ease-in-out;
+	-moz-transition: width .4s ease-in-out;
+	-ms-transition: width .4s ease-in-out;
+	-o-transition: width .4s ease-in-out;
+	transition: width .4s ease-in-out;
+}
+/* stripes */
+.age_restriction-banners-list .age_restriction-meter span {
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	background-size: 30px 30px;
+	background-image: -webkit-gradient(linear, left top, right bottom,
+	color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+	color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+	color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+	to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+	transparent 75%, transparent);
+}
+.age_restriction-banners-list .age_restriction-meter.age_restriction-animate span {
+	-webkit-animation: animate-stripes 3s linear infinite;
+	-moz-animation: animate-stripes 3s linear infinite;
+}
+
+/* Positioning */
+.age_restriction-banners-list {
+	float: left;
+	z-index: 999;
+	background-color: transparent;
+	padding: 20px;
+}
+
+.age_restriction-banners-list .age_restriction-main-container {
+	float: left;
+	overflow: hidden;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	padding-right: 17px;
+}
+	.age_restriction-banners-list:hover .age_restriction-main-container {
+		
+	}
+	
+	.age_restriction-banners-list .age_restriction-search-box-wrapper {
+		float: left;
+		background-color: #fff;
+		position: relative;
+		width: 100%;
+	}
+	.age_restriction-banners-list .age_restriction-search-box-wrapper .age_restriction-product-list-wrapper {
+		float: left;
+		background-color: #fff;
+	}
+	
+	.age_restriction-banners-list.age_restriction-type-content {
+		width: 100%;
+		height: auto;
+		z-index: 1;
+		position: relative;
+	}
+	
+	.age_restriction-banners-list.age_restriction-type-popup {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.age_restriction-banners-list.age_restriction-type-slide {
+		width: 30%;
+		height: 100%;
+		overflow: hidden;
+		border: 0;
+		border-bottom: 1px solid #dddddd;
+	}
+	.age_restriction-banners-list.age_restriction-type-slide.left {
+		border-right: 1px solid #dddddd;
+	}
+	.age_restriction-banners-list.age_restriction-type-slide.right {
+		border-left: 1px solid #dddddd;
+	}
+	.age_restriction-banners-list.age_restriction-type-slide.close {
+		padding-left: 0; padding-right: 0;
+		border-left: 0; border-right: 0;
+	}
+	.age_restriction-banners-list.age_restriction-type-slide.open {
+		padding-left: 20px; padding-right: 20px;
+	}
+	.age_restriction-banners-list.age_restriction-type-slide.open.left {
+		border-right: 1px solid #e1e1e1;
+	}
+	.age_restriction-banners-list.age_restriction-type-slide.open.right {
+		border-left: 1px solid #e1e1e1;
+	}
+	
+	.age_restriction-banners-list.age_restriction-type-bar {
+		float: left;
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+		overflow: initial;
+	}
+		.age_restriction-banners-list.age_restriction-type-bar.bottom {
+			border-bottom: 0;
+			border-top: 1px solid #b0b0b0;
+		}
+		.age_restriction-banners-list.age_restriction-type-bar .age_restriction-search-box-wrapper {
+			float: left;
+			width: 100%;
+			position: relative;
+		}
+		.age_restriction-banners-list.age_restriction-type-bar .age_restriction-search-box-wrapper form {
+	
+		}
+		.age_restriction-banners-list.age_restriction-type-bar .age_restriction-product-list-wrapper {
+			float: left;
+			left: 50%;
+			top: 100%;
+			margin-top: 1px;
+			background: none repeat scroll 0 0 #f8f8f8;
+			overflow: hidden;
+			overflow-y: auto;
+	    	position: absolute;
+			width: 1200px;
+			height: 250%;
+		}
+		.age_restriction-banners-list.age_restriction-type-bar .age_restriction-product-list-wrapper.bottom {
+			top: auto;
+			bottom: 100%;
+			margin-top: 0px;
+			margin-bottom: 1px;
+		}
+		.age_restriction-banners-list.age_restriction-type-bar .age_restriction-product-list-wrapper ul.age_restriction-product-list {
+			margin: 0 0 24px;
+		}
+	
+/* bar */
+.age_restriction-top-bar {
+	float: left;
+	border-bottom: 0;
+}
+.age_restriction-top-bar .age_restriction-search-form .age_restriction-box-params-ajax {
+	float: left;
+	width: auto;
+}
+.age_restriction-top-bar .age_restriction-search-form .age_restriction-box-params-ajax .age_restriction-advanced-settings {
+	float: right;
+}
+.age_restriction-top-bar .age_restriction-search-form .age_restriction-advanced-settings-box {
+	width: 100%;
+}
+	.age_restriction-top-bar .age_restriction-priceselect-wrapper, 
+	.age_restriction-top-bar .age_restriction-sortby-wrapper, 
+	.age_restriction-top-bar .age_restriction-customer-ratings-wrapper {
+		float: left;
+		width: auto;
+		position: relative;
+	}
+	.age_restriction-top-bar .age_restriction-search-form .age_restriction-priceselect-wrapper input {
+		width: 49%;
+	}
+		
+/* no fields icons for discount box */
+.age_restriction-main-container.promo-page .age_restriction-country-wrapper .age_restriction-field-description.no-field-icon, .age_restriction-main-container.promo-page .age_restriction-keywords-wrapper .age_restriction-field-description.no-field-icon,
+.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-field-description.no-field-icon, .age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper .age_restriction-field-description.no-field-icon,
+.age_restriction-main-container.promo-page .age_restriction-sortby-wrapper .age_restriction-field-description.no-field-icon, .age_restriction-main-container.promo-page .age_restriction-customer-ratings-wrapper .age_restriction-field-description.no-field-icon {
+	padding-left: 0px;
+}
+.age_restriction-main-container.promo-page .age_restriction-country-wrapper .age_restriction-field-description.no-field-icon:before, .age_restriction-main-container.promo-page .age_restriction-keywords-wrapper .age_restriction-field-description.no-field-icon:before,
+.age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-field-description.no-field-icon:before, .age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper .age_restriction-field-description.no-field-icon:before,
+.age_restriction-main-container.promo-page .age_restriction-sortby-wrapper .age_restriction-field-description.no-field-icon:before, .age_restriction-main-container.promo-page .age_restriction-customer-ratings-wrapper .age_restriction-field-description.no-field-icon:before {
+	background: none;
+	content: " ";
+	height: 75px;
+	left: -10px;
+	position: absolute;
+	top: -16px;
+	width: 81px;
+}
+
+/* banner logo */
+.age_restriction-main-container.slide-side .age_restriction-banner-logo,
+.age_restriction-main-container.promo-page .age_restriction-banner-logo {
+	text-align: center;
+}
+
+/* one half inputs */
+.age_restriction-main-container.slide-side .age_restriction-search-form input.age_restriction-one-half {
+	width: 48%;
+}
+
+/* dont show me again */
+.age_restriction-dont-show-again {
+	position:absolute;
+	top: 8px;
+	left: 10px;
+	cursor: pointer;
+	opacity: 0.2;
+	font-family: Open Sans;
+	font-size:12px;
+}
+.age_restriction-dont-show-again label {
+	vertical-align:top;
+	cursor: pointer;
+}
+.age_restriction-dont-show-again input {
+	cursor: pointer;
+	position: relative;
+	left: -3px;
+	bottom: 0px;
+}
+	.age_restriction-banners-list:hover .age_restriction-dont-show-again {
+		opacity: 1;
+	}
+
+/* advanced settings - always closed */
+.age_restriction-banners-list .age_restriction-search-form .age_restriction-advanced-settings-box {
+	display: none;
+}
+
+/* products results close button */
+/*a.age_restriction-prod-close {
+	background-image: url('images/popup/close_btn.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	display: block;
+	width: 26px; 
+	height: 26px; 
+	top: -10px; right: 0px;
+	position: absolute;
+	z-index:999;
+}
+.age_restriction-top-bar a.age_restriction-prod-close {
+	top: 0;
+}*/
+.age_restriction-banners-list .age_restriction-prod-close {
+	background: #f7f7f7;
+	border-radius: 5px;
+	color: #d0403f;
+	display: block;
+	font: bold 14px 'Open Sans';
+	padding: 10px 20px; /*padding: 10px 5px 10px 35px;*/
+	text-align: center;
+	text-decoration: none;
+	width: 140px;
+	box-shadow: 0 2px 0 #d7d7d7;
+	position: relative;
+}
+	/*.age_restriction-banners-list .age_restriction-prod-close:before {
+		position: absolute;
+		content: '';
+		top: 5px;
+		left: 8px;
+		width: 32px;
+		height: 32px;
+		background: url('images/popup/close_btn.png') no-repeat 0 0;
+	}*/
+	.age_restriction-banners-list .age_restriction-prod-close:hover {
+		background: #bdc3c7;
+		box-shadow: 0 2px 0 #95a5a6;
+		color: #fff;
+	}
+	
+/* products loading */
+.age_restriction-banners-list .age_restriction-prod-loading {
+	background: none repeat scroll 0 0 #f7f7f7;
+	border-radius: 5px;
+	color: #d0403f;
+	display: block;
+	font: bold 14px 'Open Sans';
+	margin: 0 auto 20px;
+	padding: 10px 5px 10px 35px;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	box-shadow: 0 2px 0 #d7d7d7;
+	position: relative;
+}
+	.age_restriction-banners-list .age_restriction-prod-loading:before {
+		position: absolute;
+		content: '';
+		top: 5px;
+		left: 8px;
+		width: 32px;
+		height: 32px;
+		background: url('images/preloader.gif') no-repeat 0 0;
+	}
+	/*.age_restriction-banners-list .age_restriction-prod-loading:hover {
+		background: #2f2f2f;
+		box-shadow: 0 2px 0 #000;
+	}*/
+	
+.age_restriction-banners-list .age_restriction-top-bar .age_restriction-prod-loading {
+	z-index: 99999;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.age_restriction-banners-list .age_restriction-search-form {
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.age_restriction-banners-list .age_restriction-separator {
+	width: 96%;
+	margin: 0px 2% 0px 2%;
+	border-top: 1px double #dddddd;
+	border-bottom: 1px double #dddddd;
+	height: 1px;
+	float: left;
+}
+
+.age_restriction-main-container .age_restriction-search-form .age_restriction-advanced-settings {
+	margin: 20px 0px 0px 0px;
+}
+
+
+.age_restriction-main-container .age_restriction-buttons {
+	float: left;
+	width: 100%;
+	margin: 30px 0px 30px 0px;
+}
+	.age_restriction-main-container .age_restriction-buttons .age_restriction-search-button {
+		margin: 0px auto;
+	}
+
+.age_restriction-search-form .age_restriction-select {
+	text-align: left;
+}
+
+.age_restriction-top-bar .age_restriction-country-wrapper {
+	margin: 0px 12px 0px 0px;
+}
+.age_restriction-top-bar .age_restriction-buttons {
+	width: auto;
+	float: left;
+}
+	.age_restriction-top-bar .age_restriction-search-form .age_restriction-plus-sign-top {
+		margin: 0px 0px 0px 0px;
+	}
+.age_restriction-top-bar .age_restriction-country-wrapper > div:nth-child(1) {
+	width: 160px; 
+}
+	.age_restriction-top-bar .age_restriction-country-wrapper .age_restriction-box-category-ajax {
+		float: left;
+		width: 200px;
+	}
+		.age_restriction-top-bar .age_restriction-country-wrapper .age_restriction-box-category-ajax .age_restriction-select {
+			width: 100%;
+			padding: 0px 0px 0px 0px;
+		}
+		
+	.age_restriction-top-bar .age_restriction-box-params-ajax {
+		margin: 0px 20px 0px 0px;
+	}
+	.age_restriction-top-bar .age_restriction-search-form .age_restriction-search-button {
+		margin-top: 0px;
+	}
+	
+	.age_restriction-top-bar .age_restriction-country-wrapper {
+		padding: 0px 0px 0px 0px;
+	}
+	.age_restriction-top-bar .age_restriction-keywords-wrapper input[type="text"] {
+		width: 100%;
+	}
+	.age_restriction-banners-list .age_restriction-top-bar .age_restriction-search-form {
+		padding: 0px 0px 0px 0px;
+	}
+	
+.age_restriction-banners-list.age_restriction-type-bar {
+	padding: 10px 0px 10px 0px;
+}
+.age_restriction-banners-list .age_restriction-top-bar .age_restriction-advanced-settings-box > div {
+	margin: 10px 0px 0px 0px;
+	height: 32px;
+}
+		.age_restriction-banners-list .age_restriction-top-bar .age_restriction-advanced-settings-box .age_restriction-priceselect-wrapper input {
+			width: 200px;
+			margin: 0px 10px 0px 0px;
+		}
+		
+		.age_restriction-banners-list .age_restriction-top-bar .age_restriction-advanced-settings-box .age_restriction-keywords-wrapper {
+			margin: 10px 30px 0px 0px;
+		}
+		
+		.age_restriction-banners-list .age_restriction-top-bar .age_restriction-advanced-settings-box .age_restriction-sortby-wrapper {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		
+		.age_restriction-banners-list .age_restriction-top-bar .age_restriction-advanced-settings-box .age_restrictionGetChildrens {
+		    float: left;
+		    position: relative;
+		    width: 100%;
+		}
+
+.age_restriction-banners-list .age_restriction-top-bar .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description {
+	width: 58%;
+}
+	.age_restriction-banners-list .age_restriction-top-bar .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title {
+		margin: 0px 0px 10px 0px;
+	}
+		.age_restriction-banners-list .age_restriction-top-bar .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description .age_restriction-product-title a {
+			color: #000;
+			line-height: 26px;
+			text-decoration: none;
+		}
+	.age_restriction-banners-list .age_restriction-top-bar .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description p {
+		margin: 0px 0px 10px 0px;
+	}
+
+.age_restriction-banners-list.age_restriction-type-bar .age_restriction-product-list-wrapper {
+	padding: 0px 5px 0 5px;
+	border: 1px solid #ddd;
+	border-top: none;
+	margin-top: 0px;
+}
+
+.age_restriction-banners-list .age_restriction-top-bar a.age_restriction_products_close {
+	background: #fc8a00;
+	display: block;
+	margin-top: -50px;
+	position: fixed;
+	line-height: 37px !important;
+	z-index: 9999;
+	font: 600 14px 'Open Sans';
+	color: #fff;
+	text-transform: uppercase;
+	padding:0px 10px 0px 10px;
+ 
+}
+	.age_restriction-banners-list .age_restriction-top-bar a.age_restriction_products_close span {
+		font-size: 12px;
+		position: relative;
+		left: -5px;
+		top: -1px;
+	}
+.age_restriction-banners-list .age_restriction-top-bar a.age_restriction_products_close:hover {
+	background: #c50009;
+}
+	.age_restriction-banners-list .age_restriction-top-bar .age_restriction-product-list-wrapper .age_restriction-separator:first-child {
+		display: none;
+	}
+
+.age_restriction-top-bar .age_restriction-country-wrapper .age_restriction-select:nth-child(2n+1).Category .age_restriction-styledSelect span:before,
+.age_restriction-top-bar .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(2n+1).Category .age_restriction-options li:before {
+	content: "";
+	display: none;
+	float: left;
+	height: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	position: relative;
+	width: 0px;
+}
+.age_restriction-search-form .age_restriction-select .age_restriction-options {
+	overflow-y: auto;
+	max-height: 600px;
+}
+.age_restriction-search-form .age_restriction-select .age_restriction-options.bottom {
+	top: initial;
+	bottom: 100%;
+}
+
+.age_restriction-banners-list .age_restriction-top-bar-logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.age_restriction-product-list-wrapper .age_restriction-pagination ul {
+	height: auto;
+}

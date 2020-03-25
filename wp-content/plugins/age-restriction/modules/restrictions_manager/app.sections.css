@@ -1,0 +1,64 @@
+.conditions-tabs li { display: inline; margin: 5px 0; padding: 5px; }
+.age_restriction-conditions.ui-tabs { padding: 0; }
+.age_restriction-conditions .ui-tabs-hide { display: none !important; }
+.age_restriction-conditions .ui-widget-header { border: none; }
+.age_restriction-conditions .conditions-tabs { width: 100%;background:#eaeaea;margin:0;overflow:hidden;zoom:1;line-height:1em; }
+.age_restriction-conditions .conditions-tabs li { border-left: 1px solid #E5E5E5 !important;
+border-left: 1px solid #E5E5E5 !important;
+float: left;
+margin: 0 !important;
+padding: 0; }
+.age_restriction-conditions .conditions-tabs li:nth-child(1) {border-left: none !important;}
+.age_restriction-conditions .conditions-tabs li.alignright { float: right; }
+.age_restriction-conditions .conditions-tabs li.hide { display: none; }
+.age_restriction-conditions .conditions-tabs li.advanced-settings a { background-image: url(../images/icon-settings.png); background-repeat: no-repeat; background-position: 8px 50%; padding-left: 30px; }
+.age_restriction-conditions .conditions-tabs li a { background: none repeat scroll 0 0 #F2F2F2;
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 600;
+margin: 0;
+padding: 14px 33px !important; }
+.age_restriction-conditions .conditions-tabs li.ui-state-active { border-top: 4px solid #FD8709; height: 35px;}
+.age_restriction-conditions .conditions-tabs li.ui-state-active a { background: none repeat scroll 0 0 #FFFFFF; color: #4F4F4F; height: 11px; padding-top: 11px !important; }
+.age_restriction-panel-content  { background: #FFFFFF; padding: 0; margin: 0; }
+.age_restriction-panel-content  .condition-tab { background: #FFFFFF; padding: 2px 18px; }
+.age_restriction-panel-content  .condition-tab h4 { margin-top: 10px; }
+.age_restriction-countries-list.ui-tabs-nav { padding: 0; }
+.conditions-tabs.age_restriction-countries-list  li.ui-state-active { border-top: 4px solid #7ad03a; }
+.conditions-tabs.age_restriction-countries-list  li.ui-state-active .age_restriction-iphone-switch { top: 3px; }
+.conditions-tabs.age_restriction-countries-list li a { padding: 14px 17px !important; }
+.age_restriction-panel-content .conditions-column { display: block; margin: 0 20px 20px 0; }
+
+.age_restriction-panel-content .conditions-tabs-inner { display: block; padding: 10px 0; }
+.conditions-tabs-inner li { display: inline; padding: .2em; line-height: 2; margin: 0; }
+.conditions-tabs-inner li a { margin-right: 5px; text-decoration: none; }
+.conditions-tabs-inner li.ui-state-active a { color: #000000; font-weight: bold; }
+.age_restriction-panel-content .inside .condition-tab .condition-tab { padding: 2px 0px; }
+
+/* Reset and override jQueryUI styling, used by several plugins. */
+.age_restriction-panel-content .age_restriction-conditions { background: none; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; border-radius: 0; font-size: 12px; font-weight: normal; font-family: sans-serif; }
+.age_restriction-panel-content .conditions-tabs, .age_restriction-panel-content .conditions-tabs-inner { border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.age_restriction-panel-content .conditions-tabs-inner { background: none; }
+.age_restriction-panel-content .conditions-tabs li, .age_restriction-panel-content .conditions-tabs-inner li { background: none; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.age_restriction-panel-content .conditions-tabs li a, .age_restriction-panel-content .conditions-tabs-inner li a { outline: none; }
+.age_restriction-panel-content .conditions-tabs-inner li a { padding: 0 0.1em; }
+
+.age_restriction-panel-content .condition-tab {
+	clear: both;
+}
+
+#age_restriction_sidebars_per_sections #age_restriction-sidebar-position .age_restriction-radio-img img {
+	height: 39px; 
+}
+
+
+/* extra new css */
+#taxonomy-category {
+	overflow: hidden;
+}
+.age_restriction-conditions-select #category-tabs {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 0 !important;
+	min-height: 39px;
+}

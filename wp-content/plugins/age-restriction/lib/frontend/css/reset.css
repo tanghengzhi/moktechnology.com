@@ -1,0 +1,204 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+
+body .age_restriction-main-container a,
+body .age_restriction-main-container abbr,
+body .age_restriction-main-container acronym,
+body .age_restriction-main-container address,
+body .age_restriction-main-container applet,
+body .age_restriction-main-container article,
+body .age_restriction-main-container aside,
+body .age_restriction-main-container audio,
+body .age_restriction-main-container b,
+body .age_restriction-main-container big,
+body .age_restriction-main-container blockquote,
+body .age_restriction-main-container body,
+body .age_restriction-main-container canvas,
+body .age_restriction-main-container caption,
+body .age_restriction-main-container center,
+body .age_restriction-main-container cite,
+body .age_restriction-main-container code,
+body .age_restriction-main-container dd,
+body .age_restriction-main-container del,
+body .age_restriction-main-container details,
+body .age_restriction-main-container dfn,
+body .age_restriction-main-container dialog,
+body .age_restriction-main-container div,
+body .age_restriction-main-container dl,
+body .age_restriction-main-container dt,
+body .age_restriction-main-container em,
+body .age_restriction-main-container embed,
+body .age_restriction-main-container fieldset,
+body .age_restriction-main-container figcaption,
+body .age_restriction-main-container figure,
+body .age_restriction-main-container font,
+body .age_restriction-main-container footer,
+body .age_restriction-main-container form,
+body .age_restriction-main-container h1,
+body .age_restriction-main-container h2,
+body .age_restriction-main-container h3,
+body .age_restriction-main-container h4,
+body .age_restriction-main-container h5,
+body .age_restriction-main-container h6,
+body .age_restriction-main-container header,
+body .age_restriction-main-container hgroup,
+body .age_restriction-main-container hr,
+body .age_restriction-main-container html,
+body .age_restriction-main-container i,
+body .age_restriction-main-container iframe,
+body .age_restriction-main-container img,
+body .age_restriction-main-container ins,
+body .age_restriction-main-container kbd,
+body .age_restriction-main-container label,
+body .age_restriction-main-container legend,
+body .age_restriction-main-container li,
+body .age_restriction-main-container mark,
+body .age_restriction-main-container menu,
+body .age_restriction-main-container meter,
+body .age_restriction-main-container nav,
+body .age_restriction-main-container object,
+body .age_restriction-main-container ol,
+body .age_restriction-main-container output,
+body .age_restriction-main-container p,
+body .age_restriction-main-container pre,
+body .age_restriction-main-container progress,
+body .age_restriction-main-container q,
+body .age_restriction-main-container rp,
+body .age_restriction-main-container rt,
+body .age_restriction-main-container ruby,
+body .age_restriction-main-container s,
+body .age_restriction-main-container samp,
+body .age_restriction-main-container section,
+body .age_restriction-main-container small,
+body .age_restriction-main-container span,
+body .age_restriction-main-container strike,
+body .age_restriction-main-container strong,
+body .age_restriction-main-container sub,
+body .age_restriction-main-container summary,
+body .age_restriction-main-container sup,
+body .age_restriction-main-container table,
+body .age_restriction-main-container tbody,
+body .age_restriction-main-container td,
+body .age_restriction-main-container tfoot,
+body .age_restriction-main-container th,
+body .age_restriction-main-container thead,
+body .age_restriction-main-container time,
+body .age_restriction-main-container tr,
+body .age_restriction-main-container tt,
+body .age_restriction-main-container u,
+body .age_restriction-main-container ul,
+body .age_restriction-main-container var,
+body .age_restriction-main-container video,
+body .age_restriction-main-container xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body .age_restriction-main-container article,
+body .age_restriction-main-container aside,
+body .age_restriction-main-container details,
+body .age_restriction-main-container figcaption,
+body .age_restriction-main-container figure,
+body .age_restriction-main-container footer,
+body .age_restriction-main-container header,
+body .age_restriction-main-container hgroup,
+body .age_restriction-main-container menu,
+body .age_restriction-main-container nav,
+body .age_restriction-main-container section {
+/*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block;
+}
+
+body .age_restriction-main-container b,
+body .age_restriction-main-container strong {
+/*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold;
+}
+
+body .age_restriction-main-container img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+/*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic;
+}
+
+body .age_restriction-main-container li {
+/*
+  For IE6 + IE7.
+*/
+  display: list-item;
+}
+
+body .age_restriction-main-container table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body .age_restriction-main-container th,
+body .age_restriction-main-container td,
+body .age_restriction-main-container caption {
+  font-weight: normal;
+  /*vertical-align: top;*/
+  text-align: left;
+}
+
+body .age_restriction-main-container q {
+  quotes: none;
+}
+
+body .age_restriction-main-container q:before,
+body .age_restriction-main-container q:after {
+  content: '';
+  content: none;
+}
+
+body .age_restriction-main-container sub,
+body .age_restriction-main-container sup,
+body .age_restriction-main-container small {
+  font-size: 75%;
+}
+
+body .age_restriction-main-container sub,
+body .age_restriction-main-container sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+body .age_restriction-main-container sub {
+  bottom: -0.25em;
+}
+
+body .age_restriction-main-container sup {
+  top: -0.5em;
+}
+
+body .age_restriction-main-container svg {
+/*
+  For IE9.
+*/
+  overflow: hidden;
+}
+
+body .age_restriction-main-container ul li {
+	list-style-position: inside;
+}
+body .age_restriction-main-container .clear {
+	clear: both;
+}

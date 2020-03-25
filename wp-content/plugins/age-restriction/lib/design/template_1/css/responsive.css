@@ -1,0 +1,76 @@
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+	.ar-logo img {
+		width: 35%;
+	}
+	.ar-box {
+		position: relative;
+		top: auto;
+		left: auto;
+		-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+		transform: none;
+		padding: 20px 0px;
+	}
+	.ar-box-wrapper {
+		-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+  		transform: none;
+	}
+	.ar-box p {
+		font-size: 13px;
+	}
+	.ar-box h1 {
+		font-size: 14px;
+	}
+	.ar-box h3 {
+		font-size: 12px;
+	}
+	.ar-box .ar-form-row {
+		width: 84%;
+	}
+	.ar-box .ar-remember-me {
+		font-size: 18px;
+	}
+	.ar-box .ar-form-row.select {
+		background: none;
+	}
+	.ar-box .ar-form-row input[type="number"] {
+		width: 28%;
+	}
+	/*.main {
+		min-width: 100%;
+		min-height: 100%;
+	}
+	#age-list-container {
+		overflow: hidden;
+	}
+	ul.age-list {
+		min-width: 1000px;
+	}
+	
+	select {
+		width: auto;
+	}
+	input[type=checkbox].css-checkbox + label.css-label {
+		font-size: 17px;
+	}
+	.input-area p {
+		font-size: 10px;
+	}
+	.socialconnect .fbconnect {
+		display: inline-block;
+		font-size: 15px;
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
+	.socialconnect .gplusconnect {
+		display: inline-block;
+		font-size: 15px;
+		line-height: 25px;
+	}*/
+}

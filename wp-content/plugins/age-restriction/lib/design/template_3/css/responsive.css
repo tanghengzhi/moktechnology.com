@@ -1,0 +1,80 @@
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+	.ara-box {
+		top: auto;
+		left: auto;
+		-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+		transform: none;
+		position: static;
+	}
+	#agecheck {
+		border: 0px solid red;
+	}
+	.ara-box .ara-bdate {
+		width: 100%;
+	}
+	.ara-box .ara-form-row {
+		width: 100% !important;
+		display: block !important;
+		margin: 0px 0px 5px 0px !important;
+		height: 40px !important;
+	}
+	.ara-box .ara-form-row.day, 
+	.ara-box .ara-form-row.month, 
+	.ara-box .ara-form-row.year, 
+	.ara-box .ara-form-row.country {
+		background: none;
+	}
+	.ara-box .ara-submit {
+		padding: 0;
+	}
+	#age_restriction_gplusconnect, #age_restriction_fbconnect {
+		margin-top: 10px;
+	}
+	.ara-box .ara-form-row select {
+    	width: 100% !important;
+    	font-size: 12px;
+    	margin-top: 10px;
+    }
+    .ara-box h2 {
+    	font-size: 16px;
+    	margin-bottom: 10px;
+    }
+    .ara-box form h2 {
+    	margin: 20px 0px 5px 0px;
+    	font-size: 14px;
+    	text-align: center;
+    }
+    .ara-box .ara-remember-me {
+    	font-size: 14px;
+    	text-align: center;
+    	width: 100%;
+    	display: block;
+    	margin-top: 10px;
+    }
+    .ara-box {
+    	min-height: 100%;
+    	width: auto;
+    }
+    .ara-box .ara-logo h2 {
+    	font-size: 14px;
+    }
+    .ara-box .ara-logo img {
+    	width: 25%;
+    }
+    .ara-box .ara-facebook, .ara-box .ara-google {
+    	-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+    	transform: none;
+    	margin: 0px 0px 0px 0px;
+    	float: none;
+    }
+    .ara-box .ara-social-connect {
+    	text-align: center;
+    }
+}

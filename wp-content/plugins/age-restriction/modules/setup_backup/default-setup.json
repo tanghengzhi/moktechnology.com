@@ -1,0 +1,6 @@
+{
+	"age_restriction_module_server_status": "true",
+	"age_restriction_module_settings": "true",
+	"age_restriction_module_banners_manager": "true",
+	"age_restriction_plugin_do_activation_redirect": false
+}

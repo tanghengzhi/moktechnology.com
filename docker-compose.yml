@@ -1,0 +1,33 @@
+version: '3.3'
+
+services:
+  nginx-php-fpm:
+    image: tanghengzhi/nginx-php-fpm
+    restart: always
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 8000:80
+
+  mysql:
+    image: mysql:5.6
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: vapourle_mok
+      MYSQL_USER: vapourle_mok
+      MYSQL_PASSWORD: emntnsN}_iKb
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8888:8080
+
+volumes:
+  mysql_data:

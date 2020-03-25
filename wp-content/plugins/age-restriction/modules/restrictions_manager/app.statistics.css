@@ -1,0 +1,506 @@
+.age_restriction-statistics {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 600;
+}
+	.age_restriction-statistics .age_restriction-statistics-divider {
+		border-top: 3px solid #f3f4f8;
+		height: 0px;
+		width: 100%;
+		margin: 24px 0px;
+		float: left;
+	}
+	
+	.age_restriction-statistics .age_restriction-statistics-content{
+		float: left;
+		overflow: hidden;
+		width: 98%;
+		margin: 0px 1% 0px 1%;
+		position: relative;
+	}
+	.age_restriction-statistics-content .age_restriction-load-more {
+		background: #64D1F4;
+		color: #fff;
+		display: block;
+		float: right;
+		margin-top: -20px;
+		padding: 10px 14px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 90px;
+	}
+	.age_restriction-statistics-content .age_restriction-load-more.disabled {
+		background-color: grey;
+	}
+		#poststuff .age_restriction-statistics h2 {
+			font-family: "Open Sans";
+			font-size: 14px;
+			font-weight: 600;
+			color: #4f4f4f;
+			margin: 0px;
+			margin-top:10px;
+			padding: 0px;
+			line-height: 20px;
+			padding: 0px 0px 5px 0px;
+			text-transform: uppercase;
+			border-bottom: 1px dashed #b6b6b6;
+		}
+		.age_restriction-statistics-content h2 {
+			float: left;
+		}
+		
+	.age_restriction-statistics .age_restriction-statistics-list {
+		width: 100%;
+		padding-top: 10px;
+		overflow: hidden;
+	}
+		.age_restriction-statistics .age_restriction-statistics-list .age_restriction-list-country {
+			float: left;
+			position: relative;
+			display: inline-block;
+			margin: 0px 20px 0px 0px;
+		}
+			.age_restriction-statistics .age_restriction-statistics-list .age_restriction-list-country:after {
+				content: "-";
+				float: right;
+				padding-left: 6px;
+			}
+			.age_restriction-statistics .age_restriction-statistics-list .age_restriction-list-country span {
+				float: left;
+				margin-right: 5px;
+				margin-top: 4px;
+				position: relative;
+			}
+		.age_restriction-statistics .age_restriction-statistics-list li {
+			width: 100%;
+			display: block;
+			border-bottom: 1px solid #e2e2e2;
+			float: left;
+			padding: 5px 0px 12px 0px;
+		}
+	
+	.age_restriction-statistics .age_restriction-list-value {
+		border-right: 1px solid #b6b6b6;
+		display: inline-block;
+		margin: 0px 10px 0px 0px;
+		padding: 0px 10px 0px 0px;
+	}
+	.age_restriction-statistics .age_restriction-list-value.desktop {
+		color: #9acd00;
+	}
+	.age_restriction-statistics .age_restriction-list-value.mobile {
+		color: #64d1f4;
+	}
+	.age_restriction-statistics .age_restriction-list-value.tablet {
+		color: #000000;
+	}
+	.age_restriction-statistics .age_restriction-list-value.impressions {
+		color: #7ac127;
+	}
+	.age_restriction-statistics .age_restriction-list-value.authentications {
+		color: #ff750a;
+	}
+	.age_restriction-statistics .age_restriction-list-value.auth-manual {
+		color: #ffa700;
+	}
+	.age_restriction-statistics .age_restriction-list-value.auth-facebook {
+		color: #3b5998;
+	}
+	.age_restriction-statistics .age_restriction-list-value.auth-google {
+		color: #dd4b39;
+	}
+	.age_restriction-statistics .age_restriction-list-value.date {
+		color: #737373;
+	}
+		.age_restriction-statistics .age_restriction-statistics-list li .age_restriction-list-value:last-child {
+			padding: 0px 0px 0px 0px;
+			border: none;
+		}
+	
+	.age_restriction-statistics .age_restriction-progress-container {
+		width: 106px;
+		height: 24px;
+		background: #dedede;
+		float: left;
+		position: relative;
+		overflow: hidden;
+		border-radius: 2px;
+		display: inline-block;
+		margin: 0px 20px 0px 0px;
+	}
+		.age_restriction-statistics .age_restriction-progress-container .age_restriction-progress-status {
+			display: block;
+			position: absolute;
+			height: inherit;
+			color: #fff;
+			text-align: right;
+			padding-right: 10px;
+			line-height: 24px;
+			font-family: "Open Sans";
+			font-size: 14px;
+			font-weight: 600;
+			color: #fff;
+			text-indent: 2px;
+		}
+		.age_restriction-statistics .age_restriction-progress-status.after_70 {
+			background: #44cd00;
+		}
+		.age_restriction-statistics .age_restriction-progress-status.after_50 {
+			background: #ff750a;
+		}
+		.age_restriction-statistics .age_restriction-progress-status.after_40 {
+			background: #ffab0a;
+		}
+		.age_restriction-statistics .age_restriction-progress-status.after_30 {
+			background: #ffd40a;
+		}
+		.age_restriction-statistics .age_restriction-progress-status.after_20 {
+			background: #ff4f0a;
+		}
+		.age_restriction-statistics .age_restriction-progress-status.after_0 {
+			background: #ff0000;
+		}
+	/* Charts */
+	.age_restriction-statistics .age_restriction-chart-container {
+	  float: left;
+	  width: 25%;
+	}
+		.age_restriction-statistics .age_restriction-chart-container .chart .age_restriction-chart-refresh {
+			background: url("assets/refresh-doughnut.png") no-repeat 8px 5px #F9F9F9;
+			border-radius: 100%;
+			height: 30px;
+			position: absolute;
+			right: 15px;
+			top: 0;
+			width: 30px;
+			cursor: pointer;
+		}
+		.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title {
+			width: 100%;
+		}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title p {
+				text-align: center;
+				font-family: 'Open Sans';
+				font-size: 11px;
+				font-weight: 600;
+			}
+				.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.devices p span.age_restriction-mobile {
+					color: #64d1f4;
+					display: inline-block;
+					margin: 0 5px;
+					width: 80px;
+				}
+					.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.devices p span.age_restriction-mobile:before {
+						content: '';
+						width: 10px;
+						height: 10px;
+						background: #64d1f4;
+						margin-left: -15px;
+						margin-top: 3px;
+						position: absolute;
+					}
+				.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.devices p span.age_restriction-tablet {
+					color: #000000;
+					display: inline-block;
+					margin: 0 5px;
+					width: 80px;
+				}
+					.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.devices p span.age_restriction-tablet:before {
+						content: '';
+						width: 10px;
+						height: 10px;
+						background: #000000;
+						margin-left: -15px;
+						margin-top: 3px;
+						position: absolute;
+					}
+				.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.devices p span.age_restriction-desktop {
+					color: #9acd00;
+					display: inline-block;
+					margin: 0 5px;
+					width: 80px;
+				}
+					.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.devices p span.age_restriction-desktop:before {
+						content: '';
+						width: 10px;
+						height: 10px;
+						background: #9acd00;
+						margin-left: -15px;
+						margin-top: 3px;
+						position: absolute;
+					}
+				.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.snetworks p span.age_restriction-manual {
+					color: #ffa700;
+					display: inline-block;
+					margin: 0 5px;
+					width: 80px;
+				}
+					.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.snetworks p span.age_restriction-manual:before {
+						content: '';
+						width: 10px;
+						height: 10px;
+						background: #ffa700;
+						margin-left: -15px;
+						margin-top: 3px;
+						position: absolute;
+					}
+				.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.snetworks p span.age_restriction-facebook {
+					color: #3b5998;
+					display: inline-block;
+					margin: 0 5px;
+					width: 80px;
+				}
+					.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.snetworks p span.age_restriction-facebook:before {
+						content: '';
+						width: 10px;
+						height: 10px;
+						background: #3b5998;
+						margin-left: -15px;
+						margin-top: 3px;
+						position: absolute;
+					}
+				.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.snetworks p span.age_restriction-google {
+					color: #dd4b39;
+					display: inline-block;
+					margin: 0 5px;
+					width: 80px;
+				}
+					.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.snetworks p span.age_restriction-google:before {
+						content: '';
+						width: 10px;
+						height: 10px;
+						background: #dd4b39;
+						margin-left: -15px;
+						margin-top: 3px;
+						position: absolute;
+					}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.desktop p {
+				color: #9acd00;
+			}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.mobile p {
+				color: #64d1f4;
+			}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.tablet p {
+				color: #000000;
+			}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.impressions p {
+				color: #7ac127;
+			}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.authentications p {
+				color: #ff750a;
+			}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.auth-manual p {
+				color: #ffa700;
+			}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.auth-facebook p {
+				color: #3b5998;
+			}
+			.age_restriction-statistics .age_restriction-chart-container .age_restriction-chart-title.auth-google p {
+				color: #dd4b39;
+			}
+	.age_restriction-statistics .chart {
+		position: relative;
+		width: 166px;
+		height: 166px;
+		border-radius: 100%;
+		background: #f9f9f9;
+		margin: 0px auto;
+	}
+	.age_restriction-statistics .doughnutTip {
+		position: relative;
+		min-width: 30px;
+		max-width: 300px;
+		padding: 5px 15px;
+		border-radius: 1px;
+		background: rgba(0,0,0,.8);
+		color: #ddd;
+		font-size: 17px;
+		text-shadow: 0 1px 0 #000;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.3;
+		letter-spacing: .06em;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+		pointer-events: none;
+	}
+	.age_restriction-statistics .doughnutTip:after {
+		position: absolute;
+		left: 50%;
+		bottom: -6px;
+		content: "";
+		height: 0;
+		margin: 0 0 0 -6px;
+		border-right: 5px solid transparent;
+		border-left: 5px solid transparent;
+		border-top: 6px solid rgba(0,0,0,.7);
+		line-height: 0;
+	}
+	.age_restriction-statistics .doughnutSummary {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: #d5d5d5;
+		text-align: center;
+		cursor: default;
+	}
+	.age_restriction-statistics .doughnutSummaryTitle {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		margin-top: -27%;
+		font-size: 22px;
+		letter-spacing: .06em;
+	}
+	.age_restriction-statistics .doughnutSummaryNumber {
+		font-family: 'Open Sans';
+		font-size: 24px;
+		font-weight: 600;
+		left: -20px;
+		position: absolute;
+		top: -32px;
+		width: 52px;
+	}
+		#age_restriction-chart-devices .doughnutSummaryNumber {
+			display: none;
+		}
+		#age_restriction-chart-snetworks .doughnutSummaryNumber {
+			display: none;
+		}
+		#age_restriction-chart-authentications .doughnutSummaryNumber {
+			color: #ff750a;
+			/*top: -34px;
+			left: -20px;*/
+		}
+		#age_restriction-chart-impressions .doughnutSummaryNumber {
+			color: #7ac127;
+			/*top: -4px;
+			left: -5px;*/
+		}
+	/*.age_restriction-statistics .chart path:hover { opacity: .65; }*/
+	
+	
+/* Extra CSS */
+.age_restriction-statistics .age_restriction-statistics-content #age_restriction-stats-graph .legend {
+	display: none;
+}
+.age_restriction-statistics .age_restriction-statistics-content #age_restriction-stats-graph {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: 0px 0 10px;
+    padding: 0;
+    overflow: hidden;
+}
+.age_restriction-statistics .age_restriction-statistics-content #age_restriction-filter-by-date {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    width: 424px;
+}
+.age_restriction-statistics .age_restriction-statistics-content #age_restriction-filter-by-date label {
+    float: left;
+    margin: 0 5px 0 0;
+    width: auto;
+    padding: 6px 0;
+    display: block;
+}
+.age_restriction-statistics .age_restriction-statistics-content #age_restriction-filter-by-date input {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 110px;
+}
+.age_restriction-statistics .age_restriction-statistics-content #age_restriction-filter-by-date input {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 110px;
+}
+.age_restriction-statistics .age_restriction-statistics-content #age_restriction-filter-by-date input.age_restriction-button {
+	padding: 2px;
+}
+
+.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li {
+	width: auto;
+	border-bottom: 0px;
+	vertical-align: bottom;
+}
+.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li .age_restriction-list-value {
+}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li .age_restriction-list-value span {
+	    border-right: 1px solid #b6b6b6;
+	    display: inline-block;
+	    height: 10px;
+	    width: 10px;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li:last-child .age_restriction-list-value span {
+		border-right: 0px;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li:before {
+		/* For a round bullet */
+    	content:'\2022';
+    	font-size: 25px;
+    	vertical-align: bottom;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.desktop:before {
+		color: #9acd00;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.mobile:before {
+		color: #64d1f4;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.tablet:before {
+		color: #000000;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.impressions:before {
+		color: #7ac127;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.authentications:before {
+		color: #ff750a;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.auth-manual:before {
+		color: #ffa700;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.auth-facebook:before {
+		color: #3b5998;
+	}
+	.age_restriction-statistics .age_restriction-statistics-list.age_restriction-legend li.auth-google:before {
+		color: #dd4b39;
+	}
+
+#age_restriction-filter-graph-data {
+	height: 30px;
+}
+#age_restriction-stats-details {
+	position: relative;
+}
+	#age_restriction-stats-details h2 {
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+	#age_restriction-stats-details .wp-list-table th:nth-child(1) {
+		width: 18%;
+	}
+	#age_restriction-stats-details .wp-list-table th:nth-child(3) {
+		width: 11%;
+	}
+	#age_restriction-stats-details .wp-list-table th:nth-child(7) {
+		width: 11%;
+	}
+.age_restriction-statistics-list .tablenav.top .pagination-links .paging-input label, 
+.age_restriction-statistics-list .tablenav.top .pagination-links .paging-input input {
+	width: 15%;
+}
+
+#age_restriction-stats-export table {
+	width: 100%;
+}
+	#age_restriction-stats-export table label {
+		display: inline-block;
+		margin: 5px;
+		width: 15%;
+	}
+	#age_restriction-stats-export table select {
+		width: 45%;
+		margin-bottom: 3px;
+	}

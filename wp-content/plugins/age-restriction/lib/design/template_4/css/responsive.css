@@ -1,0 +1,96 @@
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+	.ar-box {
+		top: auto;
+		left: auto;
+		-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+		transform: none;
+		position: static;
+		padding: 20px 20px;
+		max-width: auto;
+	}
+	.ar-box-wrapper {
+		-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+  		transform: none;
+	}
+	#agecheck {
+		border: 0px solid red;
+	}
+	.ar-box .ar-bdate {
+		width: 100%;
+	}
+	.ar-box .ar-form-row {
+		width: 100% !important;
+		display: block !important;
+		margin: 0px 0px 5px 0px !important;
+		height: 40px !important;
+	}
+	.ar-box .ar-form-row.day, 
+	.ar-box .ar-form-row.month, 
+	.ar-box .ar-form-row.year, 
+	.ar-box .ar-form-row.country {
+		background: none;
+	}
+	.ar-box form, #agecheck {
+		margin-bottom: 20px;
+	}
+	.ar-box .ar-submit {
+		padding: 0;
+	}
+	#age_restriction_gplusconnect, #age_restriction_fbconnect {
+		margin-top: 10px;
+	}
+	.ar-box .ar-form-row select {
+    	width: 100% !important;
+    	font-size: 12px;
+    	margin-top: 10px;
+    }
+    .ar-box h1 {
+    	font-size: 23px;
+    }
+    .ar-box h2 {
+    	font-size: 16px;
+    	margin-bottom: 10px;
+    }
+    .ar-box form h2 {
+    	margin: 20px 0px 5px 0px;
+    	font-size: 14px;
+    	text-align: center;
+    }
+    .ar-box .ar-remember-me {
+    	font-size: 14px;
+    	text-align: center;
+    	display: block;
+    	margin-top: 10px;
+    }
+    .ar-box .ar-facebook, .ar-box .ar-google {
+    	width: 100%;
+    }
+    .ar-box {
+    	width: auto;
+    }
+    .ar-box .ar-logo h2 {
+    	font-size: 14px;
+    }
+    .ar-box .ar-logo img {
+    	width: 25%;
+    }
+    .ar-box .ar-facebook, .ar-box .ar-google {
+    	-ms-transform: none; /* IE 9 */
+  		-o-transform: none; /* Opera older browsers */
+  		-moz-transform: none; /* Mozila */
+  		-webkit-transform: none; /* Chrome, Safari, Opera */
+    	transform: none;
+    	margin: 0px 0px 0px 0px;
+    	float: none;
+    }
+    .ar-box .ar-social-connect {
+    	text-align: center;
+    }
+}

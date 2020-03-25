@@ -1,0 +1,947 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Premium Age Restriction Plugin for Wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon May 04 2015 14:24:10 GMT+0300 (Eastern Europe "
+"Daylight Time)\n"
+"POT-Revision-Date: Mon May 04 2015 14:24:19 GMT+0300 (Eastern Europe "
+"Daylight Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../modules/server_status/init.php:77
+msgid "Check System status"
+msgstr ""
+
+#: ../modules/server_status/init.php:78
+msgid "System Status"
+msgstr ""
+
+#: ../modules/server_status/init.php:118 ../modules/restrictions_manager/init.php:
+#: 334 ../modules/remote_support/init.php:117 ../lib/frontend/banner.tpl.php:187
+msgid "Loading"
+msgstr ""
+
+#: ../modules/server_status/init.php:205
+msgid "Environment"
+msgstr ""
+
+#: ../modules/server_status/init.php:211
+msgid "Home URL"
+msgstr ""
+
+#: ../modules/server_status/init.php:215
+msgid "age_restriction Version"
+msgstr ""
+
+#: ../modules/server_status/init.php:219
+msgid "WP Version"
+msgstr ""
+
+#: ../modules/server_status/init.php:223
+msgid "Web Server Info"
+msgstr ""
+
+#: ../modules/server_status/init.php:227
+msgid "PHP Version"
+msgstr ""
+
+#: ../modules/server_status/init.php:231
+msgid "MySQL Version"
+msgstr ""
+
+#: ../modules/server_status/init.php:235
+msgid "WP Memory Limit"
+msgstr ""
+
+#: ../modules/server_status/init.php:239
+msgid "WP Debug Mode"
+msgstr ""
+
+#: ../modules/server_status/init.php:240 ../modules/server_status/init.php:283 ..
+#: /modules/restrictions_manager/app.banner_type.php:284 ..
+#: /modules/restrictions_manager/app.banner_type.php:312
+msgid "Yes"
+msgstr ""
+
+#: ../modules/server_status/init.php:240 ../modules/server_status/init.php:283 ..
+#: /modules/restrictions_manager/app.banner_type.php:283 ..
+#: /modules/restrictions_manager/app.banner_type.php:311
+msgid "No"
+msgstr ""
+
+#: ../modules/server_status/init.php:243
+msgid "WP Max Upload Size"
+msgstr ""
+
+#: ../modules/server_status/init.php:247
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: ../modules/server_status/init.php:251
+msgid "PHP Time Limit"
+msgstr ""
+
+#: ../modules/server_status/init.php:255
+msgid "WP Remote GET"
+msgstr ""
+
+#: ../modules/server_status/init.php:262
+msgid "Plugins"
+msgstr ""
+
+#: ../modules/server_status/init.php:268
+msgid "Installed Plugins"
+msgstr ""
+
+#: ../modules/server_status/init.php:275 ../aa-framework/framework.class.php:1569 
+#: ../aa-framework/menu.php:95
+msgid "Settings"
+msgstr ""
+
+#: ../modules/server_status/init.php:282
+msgid "Force SSL"
+msgstr ""
+
+#: ../modules/server_status/ajax.php:44
+#, php-format
+msgid ""
+"%s - We recommend setting memory to at least 128MB. See: <a "
+"href=\"%s\">Increasing memory allocated to PHP</a>"
+msgstr ""
+
+#: ../modules/server_status/ajax.php:87
+msgid "wp_remote_get() was successful - GeoIP is working."
+msgstr ""
+
+#: ../modules/server_status/ajax.php:90
+msgid ""
+"wp_remote_get() failed. GeoIP won't work with your server. Contact your "
+"hosting provider. Error:"
+msgstr ""
+
+#: ../modules/server_status/ajax.php:93
+msgid "wp_remote_get() failed. GeoIP may not work with your server."
+msgstr ""
+
+#: ../modules/server_status/ajax.php:109
+msgid "Your server has the SOAP Client class enabled."
+msgstr ""
+
+#: ../modules/server_status/ajax.php:112
+#, php-format
+msgid ""
+"Your server does not have the <a href=\"%s\">SOAP Client</a> class enabled - "
+"some gateway plugins which use SOAP may not work as expected."
+msgstr ""
+
+#: ../modules/server_status/ajax.php:159
+msgid "is available"
+msgstr ""
+
+#: ../modules/server_status/ajax.php:162
+msgid "by"
+msgstr ""
+
+#: ../modules/server_status/ajax.php:162
+msgid "version"
+msgstr ""
+
+#: ../modules/restrictions_manager/config.php:17 ..
+#: /modules/restrictions_manager/options.php:76
+msgid "Restrictions Manager"
+msgstr ""
+
+#: ../modules/restrictions_manager/config.php:24
+msgid ""
+"With this module you can create an age restriction to whatever section/page "
+"you want in your site."
+msgstr ""
+
+#: ../modules/restrictions_manager/config.php:61
+msgid "Insert Restrictions Manager Shortcode"
+msgstr ""
+
+#: ../modules/restrictions_manager/list-table.class.php:280
+#, php-format
+msgid "1 item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../modules/restrictions_manager/init.php:55 ../lib/frontend/banner.php:73
+msgid "Popup"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:125
+msgid "Restrictions"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:126
+msgid "Restriction"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:127
+msgid "Add new"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:128
+msgid "Add new restriction"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:129
+msgid "Edit Restriction"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:130
+msgid "New Restriction"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:131
+msgid "View Restriction"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:132
+msgid "Search into restrictions"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:133
+msgid "No restrictions found"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:134
+msgid "No restrictions in trash"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:242
+msgid "Age Restriction Details"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:343
+msgid "How / What to display"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:344
+msgid "Where to display"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:346
+msgid "Statistics"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:574
+msgid "Type"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:589
+msgid "ID"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:591
+msgid "Title"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:595
+msgid "Countries"
+msgstr ""
+
+#: ../modules/restrictions_manager/init.php:596
+msgid "Date"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:84 ..
+#: /modules/restrictions_manager/app.discount.php:164 ..
+#: /modules/restrictions_manager/app.discount.php:181 ..
+#: /modules/restrictions_manager/app.discount.php:259 ..
+#: /modules/restrictions_manager/app.discount.php:467
+msgid "(check all)"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:162 ..
+#: /modules/restrictions_manager/app.discount.php:346 ..
+#: /modules/restrictions_manager/app.discount.php:519 ../aa-framework/ajax-list-
+#: table.php:595
+msgid "All"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:276
+msgid "Discount"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:285
+msgid "Keywords"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:340
+msgid "BrowseNode"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:370
+msgid "Brand"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:380
+msgid "Condition"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:396
+msgid "Manufacturer"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:406
+msgid "Maximum Price"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:416
+msgid "Minimum Price"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:426
+msgid "Merchant Id"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.discount.php:436
+msgid "Sort"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:129 ..
+#: /modules/restrictions_manager/app.sections.php:302
+msgid "Pages"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:139
+msgid "view page"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:144
+#, php-format
+msgid "The \"%s\" page"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:220
+msgid "Page Templates"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:226
+#, php-format
+msgid "The \"%s\" page template"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:236
+msgid "Post Types"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:243
+#, php-format
+msgid "\"%s\" Post Type Archive"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:244
+#, php-format
+msgid "The \"%s\" post type archive"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:252
+#, php-format
+msgid "Each Individual %s"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:253
+#, php-format
+msgid "Entries in the \"%s\" post type"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:270
+msgid "Taxonomy Archives"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:278
+#, php-format
+msgid "The default \"%s\" archives"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:287
+#, php-format
+msgid "The %s %s archive"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:289
+#, php-format
+msgid "All posts in \"%s\""
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:289
+#, php-format
+msgid "All posts in the %s %s archive"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:298
+msgid "Template Hierarchy"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:303
+msgid "Displayed on all pages that don't have a more specific widget area."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:307
+msgid "Search Results"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:308
+msgid "Displayed on search results screens."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:312
+msgid "Default \"Your Latest Posts\" Screen"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:313
+msgid "Displayed on the default \"Your Latest Posts\" screen."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:317
+msgid "Front Page"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:318
+msgid ""
+"Displayed on any front page, regardless of the settings under the \"Settings -"
+"> Reading\" admin screen."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:322
+msgid "Single Entries"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:323
+msgid "Displayed on single entries of any public post type other than \"Pages\"."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:327
+msgid "All Archives"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:328
+msgid ""
+"Displayed on all archives (category, tag, taxonomy, post type, dated, author "
+"and search)."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:332
+msgid "Author Archives"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:333
+msgid ""
+"Displayed on all author archive screens (that don't have a more specific "
+"sidebar)."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:337
+msgid "Date Archives"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:338
+msgid "Displayed on all date archives."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:342
+msgid "404 Error Screens"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:343
+msgid "Displayed on all 404 error screens."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:467
+msgid "Taxonomy Terms"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.sections.php:523
+msgid "Taxonomy Token"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:88
+msgid "Theme:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:89
+msgid "Select theme to use."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:98
+msgid "Logo:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:99 ..
+#: /modules/restrictions_manager/app.banner_type.php:114
+msgid "Upload image"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:105
+msgid "Banner logo."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:113
+msgid "Background image:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:120
+msgid "If not set, a default one will be used according to each theme style."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:129
+msgid "Background color:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:130
+msgid "If background color is set, the background image will not be used."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:138
+msgid "Box Background color:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:139
+msgid ""
+"If no background color is set for the box, the background will be "
+"transparent."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:147
+msgid "Text color:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:156
+msgid "Hover/Active text color:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:166
+msgid "Show Country Selection:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:167
+msgid "Enable Country Selection"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:169 ..
+#: /modules/restrictions_manager/app.banner_type.php:413 ..
+#: /modules/restrictions_manager/app.banner_type.php:434
+msgid "YES"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:170 ..
+#: /modules/restrictions_manager/app.banner_type.php:414 ..
+#: /modules/restrictions_manager/app.banner_type.php:435
+msgid "NO"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:178
+msgid "Title:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:187
+msgid "Title text color:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:195
+msgid "Text before:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:197
+msgid "Custom text before birth date selection."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:205
+msgid "Text color before:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:213
+msgid "Text after:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:215
+msgid "Custom text after \"ENTER\" button."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:223
+msgid "Text color after:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:231
+msgid "\"ENTER\" button title:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:240
+msgid "Submit button background color:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:249
+msgid "Submit button text color:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:258
+msgid "Custom CSS:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:260
+msgid "Restriction Custom CSS."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:270
+msgid "Minimum Age:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:271
+msgid ""
+"This is usefull if you want to restrict to a specific age on a specific "
+"country(s)."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:280
+msgid "Force show if undetected country:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:281
+msgid "Show the restriction if the country is not detected."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:294
+msgid "Select countries"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:295
+msgid "Choose on what countries you want the restriction to be displayed."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:297
+msgid "All Countries list"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:298
+msgid "Your chosen countries from list"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:308
+msgid "Enable testing:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:309
+msgid ""
+"This enables the feature to delete the SESSION/COOKIE every time after "
+"successful validation. If this is enabled, after validation just reload the "
+"page to see again the restriction.<br/><span style=\"color:red;\">Testing "
+"purpose only! Don't forget to disable this after you are done testing.</span>"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:321
+msgid "Enable for:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:324
+msgid "Enable for all"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:325
+msgid "Enable only me"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:326
+msgid "Enable for ip list"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:328
+msgid "Disable"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:336
+msgid "Enable for IP List:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:338
+msgid "Enable for IP List (one IP per line)."
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:410
+msgid "Connect with Facebook:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:422
+msgid "Facebook button text:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:431
+msgid "Sign in with Google+:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:443
+msgid "Google+ button text:"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:458
+msgid "Design"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:462 ..
+#: /modules/settings/product-tabs.php:155
+msgid "Content"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:466
+msgid "Custom CSS"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:470
+msgid "Limitations"
+msgstr ""
+
+#: ../modules/restrictions_manager/app.banner_type.php:478
+msgid "Social Connect"
+msgstr ""
+
+#: ../modules/restrictions_manager/options.php:39
+msgid "Select Banner"
+msgstr ""
+
+#: ../modules/settings/product-tabs.php:17
+msgid "Amazon Customer Reviews"
+msgstr ""
+
+#: ../modules/settings/product-tabs.php:155
+msgid "HTML and text to display."
+msgstr ""
+
+#: ../modules/settings/options.php:88
+msgid "Plugin SETUP"
+msgstr ""
+
+#: ../modules/settings/options.php:89
+msgid "Facebook Settings"
+msgstr ""
+
+#: ../modules/settings/options.php:90
+msgid "Google Settings"
+msgstr ""
+
+#: ../modules/remote_support/init.php:77
+msgid "AA-Team Remote Support"
+msgstr ""
+
+#: ../modules/remote_support/init.php:78 ../aa-framework/menu.php:139
+msgid "Remote Support"
+msgstr ""
+
+#: ../lib/design/template_3/index.php:47 ../lib/design/template_2/index.php:49 ..
+#: /lib/design/template_1/index.php:46 ../lib/design/template_4/index.php:46
+msgid "Age restriction"
+msgstr ""
+
+#: ../lib/design/template_3/index.php:193 ../lib/design/template_2/index.php:182 .
+#: ./lib/design/template_1/index.php:190 ../lib/design/template_4/index.php:197
+msgid "Loading..."
+msgstr ""
+
+#: ../lib/design/template_3/index.php:208
+msgid "Day"
+msgstr ""
+
+#: ../lib/design/template_3/index.php:216
+msgid "Month"
+msgstr ""
+
+#: ../lib/design/template_3/index.php:229
+msgid "Year"
+msgstr ""
+
+#: ../lib/design/template_3/index.php:237
+msgid "What country are you in?"
+msgstr ""
+
+#: ../lib/design/template_3/index.php:240 ../lib/design/template_2/index.php:268 .
+#: ./lib/design/template_1/index.php:213 ../lib/design/template_4/index.php:222
+msgid "Select Country"
+msgstr ""
+
+#: ../lib/design/template_3/index.php:262
+msgid ""
+"Use a cookie to remember me.<br />Only check this box if you are not using a "
+"shared computer."
+msgstr ""
+
+#: ../lib/design/template_3/index.php:317 ../lib/design/template_2/index.php:355 .
+#: ./lib/design/template_1/index.php:284 ../lib/design/template_4/index.php:292
+msgid "OK"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:208
+msgid "Feb"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:209
+msgid "Mar"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:210
+msgid "Apr"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:211
+msgid "May"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:212
+msgid "Jun"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:213
+msgid "Jul"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:214
+msgid "Aug"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:215
+msgid "Sep"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:216
+msgid "Oct"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:217
+msgid "Nov"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:218
+msgid "Dec"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:266
+msgid "PLEASE SELECT YOUR COUNTRY"
+msgstr ""
+
+#: ../lib/design/template_2/index.php:289 ../lib/design/template_1/index.php:234 .
+#: ./lib/design/template_4/index.php:243
+msgid "Remember me?"
+msgstr ""
+
+#: ../lib/scripts/plugin-depedencies/plugin_depedencies.php:76 ..
+#: /lib/scripts/plugin-depedencies/plugin_depedencies.php:77
+msgid " Depedencies"
+msgstr ""
+
+#: ../lib/frontend/ajax_validation.php:72
+msgid "Please select your country"
+msgstr ""
+
+#: ../lib/frontend/ajax_validation.php:149
+msgid "Minimum age required"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:305 ../aa-framework/ajax-list-table.php:
+#: 347 ../aa-framework/ajax-list-table.php:377
+msgid "Show All"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:308
+msgid "per pages"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:405
+msgid "The last product synchronized was:"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:407
+msgid "This was synchronized at:"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:529
+msgid "View product"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:530
+msgid "Edit product"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:596
+msgid "Published"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:597
+msgid "Scheduled"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:598
+msgid "Private"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:599
+msgid "Pending Review"
+msgstr ""
+
+#: ../aa-framework/ajax-list-table.php:600
+msgid "Draft"
+msgstr ""
+
+#: ../aa-framework/framework.class.php:1558 ../aa-framework/framework.class.php:
+#: 1559
+msgid "Age Restriction"
+msgstr ""
+
+#: ../aa-framework/framework.class.php:1568
+msgid "Plugin configuration"
+msgstr ""
+
+#: ../aa-framework/menu.php:66
+msgid "Plugin depedencies"
+msgstr ""
+
+#: ../aa-framework/menu.php:75
+msgid "Dashboard"
+msgstr ""
+
+#: ../aa-framework/menu.php:82
+msgid "Restrictions Statistics"
+msgstr ""
+
+#: ../aa-framework/menu.php:89
+msgid "Configuration"
+msgstr ""
+
+#: ../aa-framework/menu.php:104
+msgid "Plugin Status"
+msgstr ""
+
+#: ../aa-framework/menu.php:110
+msgid "Server Status"
+msgstr ""
+
+#: ../aa-framework/menu.php:119
+msgid "Plugin Settings"
+msgstr ""
+
+#: ../aa-framework/menu.php:125
+msgid "Modules Manager"
+msgstr ""
+
+#: ../aa-framework/menu.php:132
+msgid "Setup / Backup"
+msgstr ""

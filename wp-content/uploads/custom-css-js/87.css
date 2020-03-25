@@ -1,0 +1,101 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.site-header-top-wrapper.topbar-style--custom.sh--default {
+    display: none;
+}
+
+
+.tabs_style2 > ul.nav > li > a {
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.tabs_style2 > ul.nav > li.active > a, .tabs_style2 > ul.nav > li > a:hover {
+    background: none;
+    color: rgba(216, 27, 67, 1)!important;
+}
+ul.nav.hr-tabs-nav.nav-alignment--center.clearfix {
+    margin-bottom: 50px;
+}
+.el-videobox.eluida53b0d4a.el-videobox-Type-modal {
+    border: 10px solid #fff;
+}
+.eluidf5a0ecd1.zn_separator--icon-no,
+.eluid1e2e557c.zn_separator--icon-no,
+.eluida067e703.zn_separator--icon-no,
+.eluid452d7897.zn_separator--icon-no {
+    width: 62%;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.zn_custom_container.eluid27976cbe.smart-cnt--default.clearfix {
+    border-right: 2px solid #000;
+}
+
+
+
+span.sm-box-color:before {
+    content: " ";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #3E3E3E;
+    border: 1px solid #fff;
+}
+span.sm-box-color-2:before{
+    content: " ";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #FFFFFF;
+    border: 1px solid #fff;
+}
+span.sm-box-color-3:before{
+    content: " ";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #B02123;
+    border: 1px solid #fff;
+}
+
+span.sm-box-color-4:before{
+    content: " ";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #F5C971;
+    border: 1px solid #fff;
+}
+button.age-button.age-no,
+button.age-button.age-yes {
+    width: 90%;
+    display: block;
+}
+span.age-main-text,
+span.age-title {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+}
+button.age-button.age-yes {
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+}
+button.age-button.age-no {
+    font-size: 15px;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+.age-verification-main {
+    width: 620px;
+    padding: 50px 32px;
+}
+
+.elm-social-icons.sh--rounded .elm-sc-icon {
+    border-radius: 6px !important;
+    border: 1px solid #fff !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->

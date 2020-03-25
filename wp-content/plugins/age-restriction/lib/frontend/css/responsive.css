@@ -1,0 +1,109 @@
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-select {
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+	text-align: left;
+}
+
+.age_restriction-banners-list.age_restriction-sm:not(.age_restriction-type-bar) .age_restriction-country-wrapper,
+.age_restriction-banners-list.age_restriction-sm:not(.age_restriction-type-bar) .age_restriction-keywords-wrapper,
+.age_restriction-banners-list.age_restriction-sm:not(.age_restriction-type-bar) .age_restriction-priceselect-wrapper,
+.age_restriction-banners-list.age_restriction-sm:not(.age_restriction-type-bar) .age_restriction-sortby-wrapper,
+.age_restriction-banners-list.age_restriction-sm:not(.age_restriction-type-bar) .age_restriction-discount-wrapper {
+	margin: 20px 0px 0px 0px;
+}
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-box-category-ajax, 
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-search-form .age_restriction-country-wrapper .age_restriction-select:nth-child(2n+1) {
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+}
+
+.age_restriction-banners-list.age_restriction-sm .age_restriction-country-wrapper p:last-child,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-discount-wrapper p:last-child,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-priceselect-wrapper p:last-child,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-sortby-wrapper p:last-child,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-keywords-wrapper p:last-child {
+	display: none;
+}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-country-wrapper .age_restriction-field-description:before,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-discount-wrapper .age_restriction-field-description:before,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-priceselect-wrapper .age_restriction-field-description:before,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-sortby-wrapper .age_restriction-field-description:before,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-keywords-wrapper .age_restriction-field-description:before {
+		height: 35px; 
+		width: 35px;
+		top: 0px;
+		left: 0;
+		color: #3c3c3c;
+	}
+	
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-country-wrapper .age_restriction-field-description:before {	
+		background-position: -24px -90px;
+	}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-discount-wrapper .age_restriction-field-description:before {
+	    background-position: -160px -92px;
+	}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-keywords-wrapper .age_restriction-field-description:before {
+	    background-position: -90px -96px;
+	}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-priceselect-wrapper .age_restriction-field-description:before {
+	    background-position: -229px -96px;
+	}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-sortby-wrapper .age_restriction-field-description:before {
+	    background-position: -304px -96px;
+	}
+
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-country-wrapper .age_restriction-field-description,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-field-description,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper .age_restriction-field-description,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-sortby-wrapper .age_restriction-field-description,
+.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-keywords-wrapper .age_restriction-field-description {
+	padding-left: 45px;
+	text-align: left;
+}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-country-wrapper .age_restriction-field-description span,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-discount-wrapper .age_restriction-field-description span,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-priceselect-wrapper .age_restriction-field-description span,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-sortby-wrapper .age_restriction-field-description span,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-keywords-wrapper .age_restriction-field-description span {
+		font-weight: 600;
+	}
+
+.age_restriction-banners-list.age_restriction-sm .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item a.age_restriction-product-image {
+	width: 20% !important;
+	margin-right: 5%;
+	height: auto !important;
+	text-align: center;
+	background: #fff;
+}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-product-item a.age_restriction-product-image img {
+		display: block;
+		width: auto;
+		max-width: 100%;
+		margin: 0px auto;
+		/*position: relative;
+		top: 50%;
+		transform: translateY(-50%);*/
+	}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-product-description {
+		margin: 0px 0px 0px 0px;
+		width: 73%; 
+	}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-addtocart {
+		float: left;
+    	margin-top: 10px;
+    	padding: 10px 15px 10px 45px;
+    	width: 64px;
+	}
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-main-container.promo-page .age_restriction-product-list-wrapper .age_restriction-product-list .age_restriction-product-item .age_restriction-view-more {
+		float: left;
+    	margin: 10px 0px 0px 10px;
+    	padding: 10px 15px 10px 45px;
+    	width: 64px;
+	}
+	
+	.age_restriction-banners-list .age_restriction-banner-logo img,
+	.age_restriction-banners-list.age_restriction-sm .age_restriction-banner-logo img,
+	.age_restriction-banners-list.age_restriction-xsm .age_restriction-banner-logo img {
+		max-width: 100%;
+	}
+	

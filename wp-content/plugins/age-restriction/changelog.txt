@@ -1,0 +1,69 @@
+# Change Log
+All notable changes to this project will be documented in this file.
+
+## [1.8.4] - 04.05.2017
+## Fixed
+- Restriction page coming twice
+- Social Validate: Facebook and Google Plus
+- Country detection
+- Removed www.telize.com external country ip detection API
+## New
+- Redirect to custom link (internal or external) if under age
+
+## [1.8.3] - 30.11.2016
+## Fixed
+- Issues with http and https protocol
+
+## [1.8.2] - 10.10.2016
+## Fixed
+- hex2rgba convertor function
+
+## [1.8.1] - 10.10.2016
+## Fixed
+- Remember Me option
+
+## [1.8] - 10.10.2016
+## Fixed
+- Issues validating with "www" url prefix.
+- Issues with Facebook Sign-in
+## New 
+- Add option to clear statistics table
+- Add option to order day, month and year selectors in each template
+
+## [1.7] - 15.04.2016
+## Fixed
+- Issues with Facebook Sign-in
+
+## [1.6] - 15.04.2016
+## Fixed
+- Issue with validation upon multiple banners. Banners validation do not conflict anymore.
+
+## [1.5] - 22.01.2016
+## Fixed
+- Some dropdown select issues and optimizing
+## New Features
+- Restriction 'Box Transparency' setting
+- Set cookie duration
+- Customize the error message
+
+## [1.4] - 16.11.2015
+## Fixed
+- Remember me feature
+
+## [1.3] - 28.09.2015
+## New Feature
+- Now you have the option to remove the "Remember me" button when setting up a restriction
+## Fixed
+- Some other minor bugs
+
+## [1.2] - 14.05.2015
+## Fixed
+- Mobile detect class conflict
+
+## [1.1] - 06.05.2015
+## Fixed
+- Translation of the plugin
+- Responsive templates fixes
+
+## [1.0] - 01.05.2015
+- Official Release
