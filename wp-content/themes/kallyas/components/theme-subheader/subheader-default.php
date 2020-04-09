@@ -18,6 +18,7 @@
             <div>
                 <div class="container">
                     <div class="row">
+                        <!--
                         <?php
 
                         $args_def_header_title = $args['def_header_title'] != '' ? $args['def_header_title'] : $show_title;
@@ -68,6 +69,7 @@
                             </div>
                         </div>
                         <?php } ?>
+                        -->
                     </div>
                     <!-- end row -->
                 </div>
